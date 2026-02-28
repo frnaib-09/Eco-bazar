@@ -78,7 +78,10 @@
                     <div class="col-lg-8">
                         <ul class="d-flex">
                             <li>
-                                <a href="#">Home <iconify-icon icon="oui:arrow-down" width="14" height="14"></iconify-icon></a>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">Shop <iconify-icon icon="oui:arrow-down" width="14" height="14"></iconify-icon></a>
                                 <ul class="home">
                                     <li>
                                         <a href="#">Categories</a>
@@ -92,9 +95,6 @@
                                     <li><a href="#">Shopping Cart</a></li>
                                     <li><a href="#">Blog</a></li>
                                 </ul>
-                            </li>
-                            <li>
-                                <a href="#">Shop <iconify-icon icon="oui:arrow-down" width="14" height="14"></iconify-icon></a>
                             </li>
                             <li>
                                 <a href="#">Blog <iconify-icon icon="oui:arrow-down" width="14" height="14"></iconify-icon></a>
@@ -133,17 +133,92 @@
                         <div class="links col-lg-3 text-end">
                             <ul>
                                 <li>
-                                    <a href="#" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop">
-                                        <iconify-icon icon="iconamoon:search-light"></iconify-icon>
-                                    </a>
+                                    <button class="search" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+                                        aria-controls="offcanvasBottom"><iconify-icon icon="iconamoon:search-light"></iconify-icon></button>
+                                    
+                                    <div class="searchPlate offcanvas offcanvas-bottom h-100" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+                                        <div class="offcanvas-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="searchBar offcanvas-body">
+                                            <form>
+                                                <input type="search" placeholder="Search">
+                                                <iconify-icon icon="iconamoon:search-light"></iconify-icon>
+                                            </form>
+                                        </div>
+                                    </div>
                                 </li>
                                 <li>
-                                    <a href="#" class="cart d-flex text-start align-items-center">
-                                        <div class="cartC">
+                                    <button class="cart d-flex text-start align-items-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                        aria-controls="offcanvasRight">
+                                    <div class="cartC">
                                             <iconify-icon icon="streamline:shopping-bag-hand-bag-2"></iconify-icon>
                                             <div class="count"> 2 </div>
                                         </div>
-                                    </a>
+                                    </button>
+                                    
+                                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                        <div class="offcanvas-header">
+                                            <h1 class="offcanvas-title" id="offcanvasRightLabel"><iconify-icon icon="streamline:shopping-bag-hand-bag-2" width="24" height="24"></iconify-icon> Cart</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="cartBoard offcanvas-body">
+                                            <div class="cartItem d-flex">
+                                                <div class="col-3">
+                                                    <a href="#"><img src="./images/aamm.png" alt="" class="img-fluid"></a>
+                                                </div>
+                                                <div class="col-9">
+                                                    <div class="cnt">
+                                                        <a href="#" class="productNames">Green Lettuce</a>
+                                                        <p>$14.99</p>
+                                                        <div class="reviews">
+                                                            <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                                            <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                                            <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                                            <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                                            <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cartItem d-flex">
+                                                <div class="col-3">
+                                                    <a href="#"><img src="./images/aamm.png" alt="" class="img-fluid"></a>
+                                                </div>
+                                                <div class="col-9">
+                                                    <div class="cnt">
+                                                        <a href="#" class="productNames">Green Lettuce</a>
+                                                        <p>$14.99</p>
+                                                        <div class="reviews">
+                                                            <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                                            <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                                            <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                                            <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                                            <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cartItem d-flex">
+                                                <div class="col-3">
+                                                    <a href="#"><img src="./images/aamm.png" alt="" class="img-fluid"></a>
+                                                </div>
+                                                <div class="col-9">
+                                                    <div class="cnt">
+                                                        <a href="#" class="productNames">Green Lettuce</a>
+                                                        <p>$14.99</p>
+                                                        <div class="reviews">
+                                                            <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                                            <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                                            <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                                            <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                                            <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -861,7 +936,7 @@
                </div>
            </div>
            <div class="row">
-               <div class="col-lg col-md mb-2 mb-lg-0">
+               <div class="col-6 col-md col-lg mb-2 mb-lg-0">
                    <div class="newProCard">
                        <div class="newProdImg">
                            <img src="./images/newPro1.png" class="img-fluid" alt="">
@@ -884,7 +959,7 @@
                        </div>
                    </div>
                </div>
-               <div class="col-lg col-md mb-2 mb-lg-0">
+               <div class="col-6 col-md col-lg mb-2 mb-lg-0">
                    <div class="newProCard">
                        <div class="newProdImg">
                            <img src="./images/newPro2.png" class="img-fluid" alt="">
@@ -907,7 +982,7 @@
                        </div>
                    </div>
                </div>
-               <div class="col-lg col-md mb-2 mb-lg-0">
+               <div class="col-6 col-md col-lg mb-2 mb-lg-0">
                    <div class="newProCard">
                        <div class="newProdImg">
                            <img src="./images/newPro3.png" class="img-fluid" alt="">
@@ -930,7 +1005,7 @@
                        </div>
                    </div>
                </div>
-               <div class="col-lg col-md mb-2 mb-lg-0">
+               <div class="col-6 col-md col-lg mb-2 mb-lg-0">
                    <div class="newProCard">
                        <div class="newProdImg">
                            <img src="./images/newPro4.png" class="img-fluid" alt="">
@@ -953,7 +1028,7 @@
                        </div>
                    </div>
                </div>
-               <div class="col-lg col-md">
+               <div class="col-6 col-md col-lg">
                    <div class="newProCard">
                        <div class="newProdImg">
                            <img src="./images/newPro5.png" class="img-fluid" alt="">
@@ -1346,7 +1421,7 @@
 </footer>
 <!-- ----------------------------------------------------------------------- -->
 
-    <a href="#" class="goToTop"><img src="./images/top button.png" alt="" width="100"></a>
+    <a href="#" class="goToTop"><iconify-icon icon="ep:arrow-up-bold"></iconify-icon></a>
 
     <script src="./js/jquery-3.7.1.min.js"></script>
     <script src="./js/slick.min.js"></script>

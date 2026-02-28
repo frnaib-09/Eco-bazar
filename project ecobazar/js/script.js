@@ -155,7 +155,10 @@ function addToWishList() {
 
 
 $("#get-started").countdown("2026/09/23", function(event) {
-    $(this).text(
-      event.strftime('%D:%H:%M:%S')
-    );
-  });
+
+  $("#days").text(event.strftime('%D'));
+  $("#hours").text(event.strftime('%H'));
+  $("#minutes").text(event.strftime('%M'));
+  $("#seconds").text(event.strftime('%S'));
+
+});
