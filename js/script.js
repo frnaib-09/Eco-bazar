@@ -1,22 +1,3 @@
-window.addEventListener("load", function() {
-    const loader = document.getElementById("preloader");
-    loader.classList.add("loader-hidden");
-    
-    loader.addEventListener("transitionend", () => {
-        document.body.removeChild(loader);
-    });
-});
-
-
-window.onload = function() {
-    document.getElementById("popup").classList.add("show");
-};
-
-document.getElementById("close").onclick = function() {
-    document.getElementById("popup").classList.remove("show");
-};
-
-
 $(document).ready(function () {
   $('.banner_slider').slick({
     slidesToScroll: 1,
@@ -172,11 +153,29 @@ function addToWishList() {
 }
 
 
+
 $("#get-started").countdown("2026/09/23", function(event) {
 
   $("#days").text(event.strftime('%D'));
   $("#hours").text(event.strftime('%H'));
   $("#minutes").text(event.strftime('%M'));
   $("#seconds").text(event.strftime('%S'));
-
 });
+
+window.addEventListener("load", function() {
+    const loader = document.getElementById("preloader");
+    loader.classList.add("loader-hidden");
+    
+    loader.addEventListener("transitionend", () => {
+        document.body.removeChild(loader);
+    });
+});
+
+
+window.onload = function() {
+    document.getElementById("popup").classList.add("show");
+};
+
+document.getElementById("close").onclick = function() {
+    document.getElementById("popup").classList.remove("show");
+};
