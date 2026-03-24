@@ -180,3 +180,15 @@ document.getElementById("close").onclick = function() {
     document.getElementById("popup").classList.remove("show");
 };
 
+$(function() {
+    $("#slider-range").slider({
+        range: true,
+        min: 0,
+        max: 500,
+        values: [75, 300],
+        slide: function(event, ui) {
+            $("#amount-min").val("$" + ui.values[0]);
+            $("#amount-max").val("$" + ui.values[1]);
+        }
+    });
+});

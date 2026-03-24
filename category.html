@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/venobox.min.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel='stylesheet' href="./css/responsive.css">
 </head>
@@ -334,7 +335,7 @@
     <section id="filter">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-4">
+                <div class="col-lg-4 col-12">
                     <button class="btn filterBtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
                         aria-controls="offcanvasWithBothOptions">Filter <iconify-icon icon="lets-icons:filter-big" width="22" height="22"></iconify-icon></button>
                     
@@ -355,12 +356,12 @@
                                     </h2>
                                     <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                         <div class="accordion-body">
-                                            <input name="category" type="radio" id="fruit"><label for="fruit">Fresh Fruit (25) (134)</label><br><br>
-                                            <input name="category" type="radio" id="veg"><label for="veg">Vegetables (150)</label><br><br>
-                                            <input name="category" type="radio" id="cook"><label for="cook">Cooking (54)</label><br><br>
-                                            <input name="category" type="radio" id="snack"><label for="snack">Snacks (47)</label><br><br>
-                                            <input name="category" type="radio" id="bever"><label for="bever">Beverages (43)</label><br><br>
-                                            <input name="category" type="radio" id="beauty"><label for="beauty">Beauty & Health (38)</label><br><br>
+                                            <input name="category" type="radio" id="fruit"><label for="fruit">Fresh Fruit (25) <span>(134)</span></label><br><br>
+                                            <input name="category" type="radio" id="veg"><label for="veg">Vegetables <span>(150)</span></label><br><br>
+                                            <input name="category" type="radio" id="cook"><label for="cook">Cooking <span>(54)</span></label><br><br>
+                                            <input name="category" type="radio" id="snack"><label for="snack">Snacks <span>(47)</span></label><br><br>
+                                            <input name="category" type="radio" id="bever"><label for="bever">Beverages <span>(43)</span></label><br><br>
+                                            <input name="category" type="radio" id="beauty"><label for="beauty">Beauty & Health <span>(38)</span></label><br><br>
                                             <input name="category" type="radio" id="bread"><label for="bread">Bread & Bakery</label><br><br>
                                         </div>
                                     </div>
@@ -374,7 +375,14 @@
                                     </h2>
                                     <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                         <div class="accordion-body">
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis aperiam delectus omnis repudiandae in fugiat eaque error quod vero libero optio expedita esse, laudantium consectetur nesciunt doloremque atque perspiciatis illum!
+                                            <div class="filter-container">
+                                                <label for="amount">Price range:</label>
+                                                <div class="price-inputs">
+                                                    <input type="text" id="amount-min" readonly>
+                                                    <input type="text" id="amount-max" readonly>
+                                                </div>
+                                                <div id="slider-range"></div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -389,57 +397,57 @@
                                         <div class="accordion-body">
                                             <input type="checkbox" id="5s">
                                             <label for="5s">
-                                                <div class="rating d-flex">
-                                                    <p><iconify-icon icon="material-symbols:star"></iconify-icon></p>
-                                                    <p><iconify-icon icon="material-symbols:star"></iconify-icon></p>
-                                                    <p><iconify-icon icon="material-symbols:star"></iconify-icon></p>
-                                                    <p><iconify-icon icon="material-symbols:star"></iconify-icon></p>
-                                                    <p><iconify-icon icon="material-symbols:star"></iconify-icon></p>
-                                                    <p>5.0</p>
+                                                <div class="ratings d-flex">
+                                                    <iconify-icon class="active" icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon class="active" icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon class="active" icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon class="active" icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon class="active" icon="material-symbols:star"></iconify-icon>
+                                                    <span>5.0</span>
                                                 </div>
                                             </label><br><br>
                                             <input type="checkbox" id="4s">
                                             <label for="4s">
-                                                <div class="rating d-flex">
-                                                    <p><iconify-icon icon="material-symbols:star"></iconify-icon></p>
-                                                    <p><iconify-icon icon="material-symbols:star"></iconify-icon></p>
-                                                    <p><iconify-icon icon="material-symbols:star"></iconify-icon></p>
-                                                    <p><iconify-icon icon="material-symbols:star"></iconify-icon></p>
-                                                    <p><iconify-icon icon="material-symbols:star"></iconify-icon></p>
-                                                    <p>4.0 & up</p>
+                                                <div class="ratings d-flex">
+                                                    <iconify-icon class="active" icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon class="active" icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon class="active" icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon class="active" icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                                    <span>4.0 & up</span>
                                                 </div>
                                             </label><br><br>
                                             <input type="checkbox" id="3s">
                                             <label for="3s">
-                                                <div class="rating d-flex">
-                                                    <p><iconify-icon icon="material-symbols:star"></iconify-icon></p>
-                                                    <p><iconify-icon icon="material-symbols:star"></iconify-icon></p>
-                                                    <p><iconify-icon icon="material-symbols:star"></iconify-icon></p>
-                                                    <p><iconify-icon icon="material-symbols:star"></iconify-icon></p>
-                                                    <p><iconify-icon icon="material-symbols:star"></iconify-icon></p>
-                                                    <p>3.0 & up</p>
+                                                <div class="ratings d-flex">
+                                                    <iconify-icon class="active" icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon class="active" icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon class="active" icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                                    <span>3.0 & up</span>
                                                 </div>
                                             </label><br><br>
                                             <input type="checkbox" id="2s">
                                             <label for="2s">
-                                                <div class="rating d-flex">
-                                                    <p><iconify-icon icon="material-symbols:star"></iconify-icon></p>
-                                                    <p><iconify-icon icon="material-symbols:star"></iconify-icon></p>
-                                                    <p><iconify-icon icon="material-symbols:star"></iconify-icon></p>
-                                                    <p><iconify-icon icon="material-symbols:star"></iconify-icon></p>
-                                                    <p><iconify-icon icon="material-symbols:star"></iconify-icon></p>
-                                                    <p>2.0 & up</p>
+                                                <div class="ratings d-flex">
+                                                    <iconify-icon class="active" icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon class="active" icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                                    <span>2.0 & up</span>
                                                 </div>
                                             </label><br><br>
                                             <input type="checkbox" id="1s">
                                             <label for="1s">
-                                                <div class="rating d-flex">
-                                                    <p><iconify-icon icon="material-symbols:star"></iconify-icon></p>
-                                                    <p><iconify-icon icon="material-symbols:star"></iconify-icon></p>
-                                                    <p><iconify-icon icon="material-symbols:star"></iconify-icon></p>
-                                                    <p><iconify-icon icon="material-symbols:star"></iconify-icon></p>
-                                                    <p><iconify-icon icon="material-symbols:star"></iconify-icon></p>
-                                                    <p>1.0 & up</p>
+                                                <div class="ratings d-flex">
+                                                <iconify-icon class="active" icon="material-symbols:star"></iconify-icon>
+                                                <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                                <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                                <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                                <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                                <span>1.0 & up</span>
                                                 </div>
                                             </label><br><br>
                                         </div>
@@ -455,19 +463,19 @@
                                     <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                         <div class="accordion-body">
                                             <div class="tagsCon">
-                                                <span>Healthy</span>
-                                                <span>Vegetarian</span>
-                                                <span>Low Fat</span>
-                                                <span>Kid Foods</span>
-                                                <span>Vitamins</span>
-                                                <span>Bread</span>
-                                                <span>Meat</span>
-                                                <span>Snacks</span>
-                                                <span>Tiffin</span>
-                                                <span>Lunch</span>
-                                                <span>Dinner</span>
-                                                <span>Breakfast</span>
-                                                <span>Fruits</span>
+                                                <button>Healthy</button>
+                                                <button>Vegetarian</button>
+                                                <button class="active">Low Fat</button>
+                                                <button>Kid Foods</button>
+                                                <button>Vitamins</button>
+                                                <button>Bread</button>
+                                                <button>Meat</button>
+                                                <button>Snacks</button>
+                                                <button>Tiffin</button>
+                                                <button>Lunch</button>
+                                                <button>Dinner</button>
+                                                <button>Breakfast</button>
+                                                <button>Fruits</button>
                                             </div>
                                         </div>
                                     </div>
@@ -1005,6 +1013,7 @@
     <a href="#" class="goToTop"><iconify-icon icon="ep:arrow-up-bold"></iconify-icon></a>
 
     <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="./js/venobox.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>

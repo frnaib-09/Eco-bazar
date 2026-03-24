@@ -1870,28 +1870,74 @@ footer .footer_social_links ul li:hover a{
     padding: 15px;
 }
 
-#accordionFlushExample .rating {
+.filter-container { 
+    width: 50%; 
+    margin: 20px 0; 
+}
+
+.price-inputs { 
+    display: flex; 
+    justify-content: space-between; 
+}
+
+#amount-min, #amount-max { 
+    border: 0; 
+    color: #f6931f; 
+    font-weight: bold; 
+}
+
+#slider-range { 
+    margin-top: 10px; 
+}
+
+#flush-collapseOne span {
+    color: var(--gray-scale-gray-â€“-500);
+}
+
+#accordionFlushExample .tagsCon button {
+    background-color: var(--gray-scale-gray-â€“-50);
+    color: var(--gray-scale-gray-â€“-900);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#accordionFlushExample .tagsCon button.active {
+    background: var(--branding-success);
+    color: var(--gray-scale-white);
+}
+
+#accordionFlushExample .tagsCon button:hover {
+    background: var(--branding-success);
+    color: var(--gray-scale-white);
+}
+
+#accordionFlushExample .ratings {
     display: flex;
     gap: 3px;
     align-items: center;
     vertical-align: middle;
     margin-left: 8px;
+    color: var(--gray-scale-gray-â€“-200);
 }
 
-#accordionFlushExample span {
-    background-color: var(--gray-scale-gray-â€“-50);
+#accordionFlushExample .ratings span {
     color: var(--gray-scale-gray-â€“-900);
-    padding: 8px 16px;
-    border-radius: 30px;
-    font-size: 14px;
-    font-family: sans-serif;
-    cursor: pointer;
-    transition: all 0.2s ease;
 }
 
-#accordionFlushExample span:hover {
-    background: var(--branding-success);
+#accordionFlushExample .ratings .active {
+    color: var(--branding-warning);
+}
+
+#flush-collapseThree input[type="checkbox"] {
+    accent-color: var(--branding-success-dark);
     color: var(--gray-scale-white);
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
 }
 /* -------------------------------------------------------------------------- */
 
