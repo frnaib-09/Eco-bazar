@@ -179,3 +179,4 @@ window.onload = function() {
 document.getElementById("close").onclick = function() {
     document.getElementById("popup").classList.remove("show");
 };
+
