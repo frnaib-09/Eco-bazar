@@ -1,3 +1,27 @@
+let lastScroll = 0;
+const headerTop = document.querySelector(".headerTop");
+const headerMid = document.querySelector(".headerMid");
+const headerBottom = document.querySelector(".headerBottom");
+const mobileHeader = document.querySelector(".mblHdr");
+
+window.addEventListener("scroll", () => {
+  let currentScroll = window.scrollY;
+
+  if (currentScroll > lastScroll) {
+    headerTop.classList.add("hide");
+    headerMid.classList.add("hide");
+    headerBottom.classList.add("hide");
+    mobileHeader.classList.add("hide");
+  } else {
+    headerTop.classList.remove("hide");
+    headerMid.classList.remove("hide");
+    headerBottom.classList.remove("hide");
+    mobileHeader.classList.remove("hide");
+  }
+
+  lastScroll = currentScroll;
+});
+
 $(document).ready(function () {
   $('.banner_slider').slick({
     slidesToScroll: 1,
@@ -192,3 +216,4 @@ $(function() {
         }
     });
 });
+
