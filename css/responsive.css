@@ -522,8 +522,9 @@
 
     #otherService {
         width: 100%;
-        transform: translateY(0);
+        transform: translateY(70px);
         height: auto;
+        margin: -114px auto 30px;
     }
 
     #otherService .otherservicesBg {
@@ -541,6 +542,11 @@
 
     #otherService .freeShip .freeShipCnt p {
         font-size: 10px;
+    }
+
+    #featured {
+        padding: 0px 0 50px 0;
+        margin: 114px auto 0;
     }
 
     #feature .heading {
@@ -776,8 +782,9 @@
 
     #otherService {
         width: 100%;
-        transform: translateY(0);
+        transform: translateY(70px);
         height: auto;
+        margin: -114px auto 30px;
     }
 
     #otherService .otherservicesBg {
@@ -795,6 +802,11 @@
 
     #otherService .freeShip .freeShipCnt p {
         font-size: 10px;
+    }
+
+    #featured {
+        padding: 0px 0 50px 0;
+        margin: 114px auto 0;
     }
 
     #feature .heading {
@@ -1042,8 +1054,9 @@
 
     #otherService {
         width: 100%;
-        transform: translateY(0);
+        transform: translateY(70px);
         height: auto;
+        margin: -114px auto 30px;
     }
 
     #otherService .otherservicesBg {
@@ -1061,6 +1074,11 @@
 
     #otherService .freeShip .freeShipCnt p {
         font-size: 10px;
+    }
+
+    #featured {
+        padding: 0px 0 50px 0;
+        margin: 114px auto 0;
     }
 
     #feature .heading {
@@ -1305,10 +1323,16 @@
         margin: auto;
     }
 
+    #featured {
+        padding: 0px 0 50px 0;
+        margin: 114px auto 0;
+    }
+
     #otherService {
         width: 100%;
-        transform: translateY(0);
+        transform: translateY(70px);
         height: auto;
+        margin: -114px auto 30px;
     }
 
     #otherService .otherservicesBg {
@@ -1490,6 +1514,11 @@
         margin-top: 80px;
     }
 
+    #featured {
+        padding: 0px 0 50px 0;
+        margin: 114px auto 0;
+    }
+
     .breadCrumb {
         margin-top: 110px;
     }
@@ -1581,6 +1610,11 @@
     #otherService .freeShip{
         margin-bottom: 15px;
         border-right: 1px solid #e9e7e7;
+    }
+
+    #featured {
+        padding: 0px 0 50px 0;
+        margin: 114px auto 0;
     }
 
     #feature .heading {
@@ -1825,6 +1859,11 @@
 
     #otherService .freeShip .freeShipCnt p {
         font-size: 9px;
+    }
+
+    #featured {
+        padding: 0px 0 50px 0;
+        margin: 114px auto 0;
     }
 
     #feature .featureProCard .featureImg {

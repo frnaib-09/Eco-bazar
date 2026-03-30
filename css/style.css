@@ -2156,3 +2156,22 @@ footer .footer_social_links ul li:hover a{
     border-radius: 50%;
 }
 /* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                                  shop Page                                 */
+#navigationBar {
+    background-image: url(../images/shop\ header\ bg.png);
+    background-position: center;
+}
+
+#navigationBar nav ol li {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-â€“-200);
+}
+
+#navigationBar nav ol .on {
+    color: var(--branding-success);
+}
+/* -------------------------------------------------------------------------- */
