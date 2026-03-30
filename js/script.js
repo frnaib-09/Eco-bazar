@@ -196,24 +196,33 @@ window.addEventListener("load", function() {
 });
 
 
-window.onload = function() {
-    document.getElementById("popup").classList.add("show");
+window.onload = function () {
+    const popup = document.getElementById("popup");
+
+    const hideUntil = localStorage.getItem("popupHideUntil");
+
+    if (hideUntil && new Date().getTime() < hideUntil) {
+        return; 
+    }
+
+    if (sessionStorage.getItem("popupShown")) {
+        return;
+    }
+
+    popup.classList.add("show");
+    sessionStorage.setItem("popupShown", "true");
 };
 
-document.getElementById("close").onclick = function() {
-    document.getElementById("popup").classList.remove("show");
-};
+document.getElementById("close").onclick = function () {
+    const popup = document.getElementById("popup");
+    const checkbox = document.getElementById("never_appear");
 
-$(function() {
-    $("#slider-range").slider({
-        range: true,
-        min: 0,
-        max: 500,
-        values: [75, 300],
-        slide: function(event, ui) {
-            $("#amount-min").val("$" + ui.values[0]);
-            $("#amount-max").val("$" + ui.values[1]);
-        }
-    });
-});
+    popup.classList.remove("show");
+    if (checkbox.checked) {
+        const now = new Date().getTime();
+        const next24Hours = now + (24 * 60 * 60 * 1000);
+
+        localStorage.setItem("popupHideUntil", next24Hours);
+    }
+};
 
