@@ -2159,10 +2159,7 @@ footer .footer_social_links ul li:hover a{
 
 /* -------------------------------------------------------------------------- */
 /*                                  shop Page                                 */
-#navigationBar {
-    background-image: url(../images/shop\ header\ bg.png);
-    background-position: center;
-}
+
 
 #navigationBar nav ol li {
     font-weight: 400;
@@ -2173,5 +2170,157 @@ footer .footer_social_links ul li:hover a{
 
 #navigationBar nav ol .on {
     color: var(--branding-success);
+}
+
+#pro_details {
+    margin-top: 32px;
+}
+
+.productDemo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.productDemo a iconify-icon {
+    font-size: 24px;
+    color: var(--gray-scale-gray-â€“-500);
+    margin-bottom: 56px;
+}
+
+.productCnt h2 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 120%;
+    color: var(--gray-scale-gray-–-900);
+    margin-bottom: 12px;
+}
+
+.productCnt h2 span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: var(--branding-success-dark);
+    border-radius: 4px;
+    padding: 4px 8px;
+    background: rgba(32, 181, 38, 0.2);
+}
+
+.productCnt .stars {
+    margin-bottom: 20px;
+}
+
+.productCnt .stars iconify-icon {
+    color: var(--branding-warning);
+}
+
+.productCnt .stars p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-â€“-600);
+}
+
+.productCnt .stars span {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-â€“-300);
+    margin: 0 12px;
+}
+
+.productCnt .stars h6 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-â€“-800);
+}
+
+.productCnt .stars h6 span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-â€“-600);
+}
+
+.productCnt h3 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-â€“-300);
+    margin-bottom: 20px;
+}
+
+.productCnt h3 span {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    color: var(--branding-success-dark);
+}
+
+.productCnt h3 .off {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--branding-error);
+    border-radius: 30px;
+    padding: 3px 10px;
+    background: rgba(234, 75, 72, 0.1);
+}
+
+.productCnt .brand {
+    margin: 24px 0 18px;
+}
+
+.brand .brandLeft p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-â€“-900);
+    margin-right: 8px;
+}
+
+.brand .brandRight p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-â€“-900);
+    margin-right: 10px;
+}
+
+.brand .brandRight ul {
+    gap: 5px;
+}
+
+.brand .brandRight ul li {
+    border-radius: 500px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .25s;
+}
+
+.brand .brandRight ul li:hover {
+    background: var(--branding-success);
+}
+
+.brand .brandRight ul li a {
+    color: var(--gray-scale-gray-â€“-700);
+}
+
+.brand .brandRight ul li:hover a {
+    color: var(--gray-scale-white);
+}
+
+.prgrph p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-â€“-500);
+    margin-bottom: 24px;
 }
 /* -------------------------------------------------------------------------- */
