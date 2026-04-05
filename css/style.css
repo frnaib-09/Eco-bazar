@@ -2467,4 +2467,96 @@ footer .footer_social_links ul li:hover a{
 .btm h6 span {
     color: var(--gray-scale-gray-â€“-500);
 }
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--gray-scale-gray-â€“-100);
+    margin-bottom: 32px;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav ul li a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-â€“-500);
+    border-bottom: 2px solid transparent;
+    padding: 16px;
+    transition: .25s;
+}
+
+.nav ul li .power,
+.nav ul li:hover > a {
+    color: var(--gray-scale-gray-â€“-900);
+    border-bottom: 2px solid var(--branding-success);
+}
+
+.desLeft p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-â€“-500);
+}
+
+.desLeft .checklist {
+    list-style-image: url(../images/Check.png);
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 24px;
+}
+
+.desLeft .checklist li {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: var(--gray-scale-gray-â€“-500);
+}
+
+.defRight .ajaira {
+    display: flex;
+    border: 1px solid var(--gray-scale-gray-â€“-100);
+    border-radius: 6px;
+    margin: 20px 0;
+}
+
+.defRight .hudai {
+    margin: 20px 0;
+}
+
+.defRight .hudai .hudai1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.defRight .hudai .hudai1 ul {
+    margin-left: 12px;
+}
+
+.defRight .hudai .hudai1 ul li {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-â€“-500);
+}
+
+.defRight .hudai .hudai1 ul li b {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-â€“-900);
+}
+
+.relate {
+    margin: 80px 0;
+}
 /* -------------------------------------------------------------------------- */
