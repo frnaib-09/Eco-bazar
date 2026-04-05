@@ -2190,6 +2190,10 @@ footer .footer_social_links ul li:hover a{
     margin-bottom: 56px;
 }
 
+.productDemo a.bottoms {
+    margin-top: 56px;
+}
+
 .productCnt h2 {
     font-weight: 600;
     font-size: 36px;
@@ -2322,5 +2326,145 @@ footer .footer_social_links ul li:hover a{
     line-height: 150%;
     color: var(--gray-scale-gray-â€“-500);
     margin-bottom: 24px;
+}
+
+.addtocart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.addtocart .limit {
+    border: 1px solid var(--gray-scale-gray-â€“-200);
+    border-radius: 170px;
+    padding: 8px;
+    background: var(--gray-scale-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.limit button {
+    padding: 8px 0;
+    border-radius: 170px;
+    width: 34px;
+    height: 34px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    background: var(--gray-scale-gray-â€“-50);
+}
+
+.addtocart .limit input {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    max-width: 40px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--gray-scale-gray-â€“-900);
+}
+
+.addcart button {
+    border: none;
+    border-radius: 43px;
+    padding: 16px 40px;
+    width: 447px;
+    background: var(--branding-success);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    color: var(--gray-scale-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .25s;
+}
+
+.addcart button:hover {
+    filter: brightness(120%);
+}
+
+.addcart button iconify-icon {
+    margin-left: 16px;
+}
+
+.addtocart .wishList {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.addtocart .wishlist button {
+    border-radius: 43px;
+    padding: 16px;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(32, 181, 38, 0.1);
+    border: none;
+    color: var(--branding-success-dark);
+    transition: .25s;
+}
+
+.addtocart .wishlist button:hover {
+    background: var(--branding-success);
+    color: var(--gray-scale-white);
+}
+
+.btm {
+    margin-top: 24px;
+}
+
+.btm .detTag {
+    display: flex;
+}
+
+.btm .detTag ul {
+    margin-left: 6px;
+    gap: 6px;
+}
+
+.btm .detTag ul li a {
+    color: var(--gray-scale-gray-â€“-500);
+    transition: .25s;
+}
+
+.btm .detTag ul li .pwr,
+.btm .detTag ul li a:hover {
+    color: var(--gray-scale-gray-â€“-900);
+    text-decoration: underline;
+}
+
+.btm p {
+    margin-bottom: 12px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-â€“-900);
+}
+
+.btm p span {
+    color: var(--gray-scale-gray-â€“-500);
+}
+
+.btm h6 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-â€“-900);
+}
+
+.btm h6 span {
+    color: var(--gray-scale-gray-â€“-500);
 }
 /* -------------------------------------------------------------------------- */
