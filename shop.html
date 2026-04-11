@@ -331,9 +331,9 @@
                     <hr>
                     <div class="addtocart d-flex align-items-center justify-content-between">
                         <div class="limit col-lg-3">
-                            <button>-</button>
-                            <input type="text" value="1">
-                            <button>+</button>
+                            <button class="minus">-</button>
+                            <input id="quantity" type="number" value="1" min="1">
+                            <button class="plus">+</button>
                         </div>
                         <div class="addcart col-lg-7 justify-content-center d-flex">
                             <button>Add to Cart <iconify-icon icon="heroicons:shopping-bag" width="24" height="24"></iconify-icon></button>
@@ -358,55 +358,106 @@
                 </div>
             </div>
             <div class="row">
-                <div class="nav">
-                    <ul>
-                        <li><a href="#" class="power">Descriptions</a></li>
-                        <li><a href="#">Additional Information</a></li>
-                        <li><a href="#">Customer Feedback</a></li>
-                    </ul>
-                </div>
-                <div class="desLeft col-lg-6">
-                    <p>Sed commodo aliquam dui ac porta. Fusce ipsum felis, imperdiet at posuere ac, viverra at mauris. Maecenas tincidunt ligula a sem vestibulum pharetra. Maecenas auctor tortor lacus, nec laoreet nisi porttitor vel. Etiam tincidunt metus vel dui interdum sollicitudin. Mauris sem ante, vestibulum nec orci vitae, aliquam mollis lacus. Sed et condimentum arcu, id molestie tellus. Nulla facilisi. Nam scelerisque vitae justo a convallis. Morbi urna ipsum, placerat quis commodo quis, egestas elementum leo. Donec convallis mollis enim. Aliquam id mi quam. Phasellus nec fringilla elit.</p>
-                    <br>
-                    <p>Nulla mauris tellus, feugiat quis pharetra sed, gravida ac dui. Sed iaculis, metus faucibus elementum tincidunt, turpis mi viverra velit, pellentesque tristique neque mi eget nulla. Proin luctus elementum neque et pharetra. </p>
-                    <br>
-                    <ul class="checklist">
-                        <li>100 g of fresh leaves provides.</li>
-                        <li>Aliquam ac est at augue volutpat elementum.</li>
-                        <li>Quisque nec enim eget sapien molestie.</li>
-                        <li>Proin convallis odio volutpat finibus posuere.</li>
-                    </ul>
-                    <br>
-                    <p>Cras et diam maximus, accumsan sapien et, sollicitudin velit. Nulla blandit eros non turpis lobortis iaculis at ut massa. </p>
-                </div>
-                <div class="defRight col-lg-6">
-                    <img src="./images/sobjiwala.png" alt="" class="img-fluid">
-                    <div class="ajaira">
-                        <div class="col-lg-6">
-                            <div class="hudai">
-                                <div class="hudai1">
-                                    <img src="./images/damer tag.png" alt="" class="img-fluid">
-                                    <ul>
-                                        <li><b>64% Discount</b></li>
-                                        <li>Save your 64% money with us</li>
-                                    </ul>
-                                </div>
-                            </div>
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#desc" type="button">Descriptions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#info" type="button">Additional Information</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#feedback" type="button">Customer Feedback</a>
+                    </li>
+                </ul>
+                <div class="tab-pane fade" id="desc">
+                    <div class="description d-flex gap-4" >
+                        <div class="desLeft col-lg-6">
+                            <p>Sed commodo aliquam dui ac porta. Fusce ipsum felis, imperdiet at posuere ac, viverra at mauris. Maecenas tincidunt ligula a sem vestibulum pharetra. Maecenas auctor tortor lacus, nec laoreet nisi porttitor vel. Etiam tincidunt metus vel dui interdum sollicitudin. Mauris sem ante, vestibulum nec orci vitae, aliquam mollis lacus. Sed et condimentum arcu, id molestie tellus. Nulla facilisi. Nam scelerisque vitae justo a convallis. Morbi urna ipsum, placerat quis commodo quis, egestas elementum leo. Donec convallis mollis enim. Aliquam id mi quam. Phasellus nec fringilla elit.</p>
+                            <br>
+                            <p>Nulla mauris tellus, feugiat quis pharetra sed, gravida ac dui. Sed iaculis, metus faucibus elementum tincidunt, turpis mi viverra velit, pellentesque tristique neque mi eget nulla. Proin luctus elementum neque et pharetra. </p>
+                            <br>
+                            <ul class="checklist">
+                                <li>100 g of fresh leaves provides.</li>
+                                <li>Aliquam ac est at augue volutpat elementum.</li>
+                                <li>Quisque nec enim eget sapien molestie.</li>
+                                <li>Proin convallis odio volutpat finibus posuere.</li>
+                            </ul>
+                            <br>
+                            <p>Cras et diam maximus, accumsan sapien et, sollicitudin velit. Nulla blandit eros non turpis lobortis iaculis at ut massa. </p>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="hudai">
-                                <div class="hudai1">
-                                    <img src="./images/pata.png" alt="" class="img-fluid">
-                                    <ul>
-                                        <li><b>100% Organic</b></li>
-                                        <li>100% Organic Vegetables</li>
-                                    </ul>
+                        <div class="defRight col-lg-6">
+                            <img src="./images/sobjiwala.png" alt="" class="img-fluid">
+                            <div class="ajaira">
+                                <div class="col-lg-6">
+                                    <div class="hudai">
+                                        <div class="hudai1">
+                                            <img src="./images/damer tag.png" alt="" class="img-fluid">
+                                            <ul>
+                                                <li><b>64% Discount</b></li>
+                                                <li>Save your 64% money with us</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="hudai">
+                                        <div class="hudai1">
+                                            <img src="./images/pata.png" alt="" class="img-fluid">
+                                            <ul>
+                                                <li><b>100% Organic</b></li>
+                                                <li>100% Organic Vegetables</li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                <div class="tab-pane fade" id="info">
+                    <div class="informaiton d-flex gap-4">
+                        <div class="infoLeft col-lg-6">
+                            <h6>Weight: <span>03</span></h6>
+                            <h6>Color: <span>Green</span></h6>
+                            <h6>Type: <span>Organic</span></h6>
+                            <h6>Category: <span>Vegetables</span></h6>
+                            <h6>Stock Status: <span>Available <span>(5,413)</span></span></h6>
+                            <h6 class="d-flex gap-2">Tags: <p><a href="#">Vegetables</a>, <a href="#">Healthy</a>, <a href="#"
+                                        class="pwr">Chinese Cabbage</a>, <a href="#">Green Cabbage</a></p>
+                            </h6>
+                        </div>
+                        <div class="defRight col-lg-6">
+                            <img src="./images/sobjiwala.png" alt="" class="img-fluid">
+                            <div class="ajaira">
+                                <div class="col-lg-6">
+                                    <div class="hudai">
+                                        <div class="hudai1">
+                                            <img src="./images/damer tag.png" alt="" class="img-fluid">
+                                            <ul>
+                                                <li><b>64% Discount</b></li>
+                                                <li>Save your 64% money with us</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="hudai">
+                                        <div class="hudai1">
+                                            <img src="./images/pata.png" alt="" class="img-fluid">
+                                            <ul>
+                                                <li><b>100% Organic</b></li>
+                                                <li>100% Organic Vegetables</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="feedback">
+                                <p>This is Customer Feedback</p>
+                            </div>
             <section id="home_new" class="relate">
        <div class="container">
            <div class="row heading justify-content-between align-items-md-center mb-4">

@@ -247,3 +247,27 @@ document.getElementById("close").onclick = function () {
     }
 };
 
+
+let input = document.getElementById("quantity");
+let plusBtn = document.querySelector(".plus");
+let minusBtn = document.querySelector(".minus");
+
+    plusBtn.addEventListener("click", () => {
+        let value = parseInt(input.value) || 0;
+        input.value = value + 1;
+    });
+
+    minusBtn.addEventListener("click", () => {
+        let value = parseInt(input.value) || 0;
+        if (value > 1) {
+            input.value = value - 1;
+        }
+    });
+
+    input.addEventListener("input", () => {
+        input.value = input.value.replace(/[^0-9]/g, '');
+        
+        if (input.value === "") {
+            input.value = 1;
+        }
+    });

@@ -2472,18 +2472,11 @@ footer .footer_social_links ul li:hover a{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 16px 0;
     border-bottom: 1px solid var(--gray-scale-gray-â€“-100);
     margin-bottom: 32px;
 }
 
-.nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav ul li a {
+.nav li a {
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
@@ -2493,8 +2486,12 @@ footer .footer_social_links ul li:hover a{
     transition: .25s;
 }
 
-.nav ul li .power,
-.nav ul li:hover > a {
+.nav-link {
+    color: var(--gray-scale-gray-â€“-500);
+}
+
+#pro_details .nav li .nav-link.active,
+#pro_details .nav li:hover > a {
     color: var(--gray-scale-gray-â€“-900);
     border-bottom: 2px solid var(--branding-success);
 }
@@ -2558,5 +2555,21 @@ footer .footer_social_links ul li:hover a{
 
 .relate {
     margin: 80px 0;
+}
+
+.infoLeft h6 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-â€“-900);
+    margin-right: 24px;
+}
+
+.infoLeft h6 span {
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+color: var(--gray-scale-gray-â€“-600);
+margin-right: 0;
 }
 /* -------------------------------------------------------------------------- */
