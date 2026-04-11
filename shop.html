@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chinese Cabbage</title>
+    <title>Ecobazar - Categories</title>
     <link rel="icon" href="./images/icon.png">
     <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/venobox.min.css">
@@ -12,6 +13,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel='stylesheet' href="./css/responsive.css">
 </head>
+
 <body>
     <!-- ----------------------------------------------------------------------- -->
     <!--                                 Header                                  -->
@@ -79,7 +81,7 @@
                     <div class="col-lg-8">
                         <ul class="d-flex">
                             <li>
-                                <a href="./index.html">Home</a>
+                                <a href="#">Home</a>
                             </li>
                             <li>
                                 <a href="#">Shop <iconify-icon icon="oui:arrow-down" width="14" height="14"></iconify-icon></a>
@@ -87,13 +89,13 @@
                                     <li>
                                         <a href="#">Categories</a>
                                         <ul class="homeCat">
-                                            <li><a href="./category.html">Vegetables</a></li>
+                                            <li><a href="./item.html">Vegetables</a></li>
                                             <li><a href="#">Fruits</a></li>
                                             <li><a href="#">Grains</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="#">Wishlist</a></li>
-                                    <li><a href="#">Shopping Cart</a></li>
+                                    <li><a href="./cart.html">Shopping Cart</a></li>
                                     <li><a href="#">Blog</a></li>
                                 </ul>
                             </li>
@@ -259,12 +261,14 @@
 
     <!-- ----------------------------------------------------------------------- -->
     <!--                             Heading Section                             -->
-    <section id="navigationBar">
+    <section id="heading">
         <div class="container">
             <div class="col-lg-12 col-12 d-flex">
                 <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="breadCrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html"><iconify-icon icon="material-symbols-light:home-outline" width="24" height="24"></iconify-icon></a></li>
+                        <li class="breadcrumb-item"><a href="index.html"><iconify-icon
+                                    icon="material-symbols-light:home-outline" width="24"
+                                    height="24"></iconify-icon></a></li>
                         <li class="breadcrumb-item" aria-current="page">Categories</li>
                         <li class="breadcrumb-item on" aria-current="page">Vegetable</li>
                     </ol>
@@ -275,321 +279,648 @@
     <!-- ----------------------------------------------------------------------- -->
 
     <!-- ----------------------------------------------------------------------- -->
-    <!--                         Product Details Seciton                         -->
-    <section id="pro_details">
+    <!--                            top data section                             -->
+    <section id="topData">
         <div class="container">
             <div class="row">
-                <div class="col-lg-1">
-                    <div class="productDemo">
-                        <a href="#"><iconify-icon icon="oui:arrow-up"></iconify-icon></a>
-                        <a href="#"><img src="./images/product demo.png" alt=""></a>
-                        <a href="#"><img src="./images/product demo(1).png" alt=""></a>
-                        <a href="#"><img src="./images/product demo(2).png" alt=""></a>
-                        <a href="#"><img src="./images/product demo(3).png" alt=""></a>
-                        <a href="#" class="bottoms"><iconify-icon icon="oui:arrow-down"></iconify-icon></a>
-                    </div>
-                </div>
-                <div class="col-lg-5">
-                    <div class="productImg">
-                        <img src="./images/Product Image.png" class="img-fluid" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="productCnt">
-                        <h2>Chinese Cabbage <span>In Stock</span></h2>
-                        <div class="stars d-flex align-items-center">
-                            <iconify-icon icon="material-symbols:star" width="18" height="18"></iconify-icon>
-                            <iconify-icon icon="material-symbols:star" width="18" height="18"></iconify-icon>
-                            <iconify-icon icon="material-symbols:star" width="18" height="18"></iconify-icon>
-                            <iconify-icon icon="material-symbols:star" width="18" height="18"></iconify-icon>
-                            <iconify-icon icon="material-symbols:star" width="18" height="18"></iconify-icon>
-                            <p>4 Reviews</p>
-                            <span>•</span>
-                            <h6>SKU: <span>2,51,594</span></h6>
+                <div class="col-lg col">
+                    <p>Best Deals</p>
+                    <h3>Sale of the Month</h3>
+                    <div class="countDown d-flex align-items-center" id="get-started">
+                        <div class="box">
+                            <h4 id="days">00</h4>
+                            <p>Days</p>
                         </div>
-                        <h3><del>$48.00</del><span>$17.28</span> <span class="off">64% Off</span></h3>
-                        <hr>
-                        <div class="brand d-flex align-items-center justify-content-between">
-                            <div class="brandLeft col-lg-4 d-flex align-items-center">
-                                <p>Brand: </p>
-                                <img src="./images/brand logo.png" alt="" class="img-fluid">
+                        <div class="box">
+                            <h4 id="hours">00</h4>
+                            <p>Hours</p>
+                        </div>
+                        <div class="box">
+                            <h4 id="minutes">00</h4>
+                            <p>Mins</p>
+                        </div>
+                        <div class="box">
+                            <h4 id="seconds">00</h4>
+                            <p>Secs</p>
+                        </div>
+                    </div>
+                    <a href="#">Shop Now <iconify-icon icon="solar:arrow-right-outline"></iconify-icon></a>
+                </div>
+                <div class="offertag">
+                    <h2>56%</h2>
+                    <span>off</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ----------------------------------------------------------------------- -->
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                             Filter Section                              -->
+    <section id="filter">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-12">
+                    <button class="btn filterBtn" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Filter
+                        <iconify-icon icon="lets-icons:filter-big" width="22" height="22"></iconify-icon></button>
+
+                    <div class="offcanvas offcanvas-start showdown" data-bs-scroll="true" tabindex="-1"
+                        id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                        <div class="offcanvas-header">
+                            <h2 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Filter <iconify-icon
+                                    icon="lets-icons:filter-big" width="22" height="22"></iconify-icon></h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed btnshadow" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                            aria-expanded="false" aria-controls="flush-collapseOne">
+                                            <b>All Categories</b>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <input name="category" type="radio" id="fruit"><label for="fruit">Fresh
+                                                Fruit (25) <span>(134)</span></label><br><br>
+                                            <input name="category" type="radio" id="veg"><label for="veg">Vegetables
+                                                <span>(150)</span></label><br><br>
+                                            <input name="category" type="radio" id="cook"><label for="cook">Cooking
+                                                <span>(54)</span></label><br><br>
+                                            <input name="category" type="radio" id="snack"><label for="snack">Snacks
+                                                <span>(47)</span></label><br><br>
+                                            <input name="category" type="radio" id="bever"><label for="bever">Beverages
+                                                <span>(43)</span></label><br><br>
+                                            <input name="category" type="radio" id="beauty"><label for="beauty">Beauty &
+                                                Health <span>(38)</span></label><br><br>
+                                            <input name="category" type="radio" id="bread"><label for="bread">Bread &
+                                                Bakery</label><br><br>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed btnshadow" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                            aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            <b>Price</b>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <div class="filter-container">
+                                                <label for="amount">Price range:</label>
+                                                <div class="price-inputs">
+                                                    <input type="text" id="amount-min" readonly>
+                                                    <input type="text" id="amount-max" readonly>
+                                                </div>
+                                                <div id="slider-range"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed btnshadow" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                            aria-expanded="false" aria-controls="flush-collapseThree">
+                                            <b>Rating</b>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <input type="checkbox" id="5s">
+                                            <label for="5s">
+                                                <div class="ratings d-flex">
+                                                    <iconify-icon class="active"
+                                                        icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon class="active"
+                                                        icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon class="active"
+                                                        icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon class="active"
+                                                        icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon class="active"
+                                                        icon="material-symbols:star"></iconify-icon>
+                                                    <span>5.0</span>
+                                                </div>
+                                            </label><br><br>
+                                            <input type="checkbox" id="4s">
+                                            <label for="4s">
+                                                <div class="ratings d-flex">
+                                                    <iconify-icon class="active"
+                                                        icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon class="active"
+                                                        icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon class="active"
+                                                        icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon class="active"
+                                                        icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                                    <span>4.0 & up</span>
+                                                </div>
+                                            </label><br><br>
+                                            <input type="checkbox" id="3s">
+                                            <label for="3s">
+                                                <div class="ratings d-flex">
+                                                    <iconify-icon class="active"
+                                                        icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon class="active"
+                                                        icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon class="active"
+                                                        icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                                    <span>3.0 & up</span>
+                                                </div>
+                                            </label><br><br>
+                                            <input type="checkbox" id="2s">
+                                            <label for="2s">
+                                                <div class="ratings d-flex">
+                                                    <iconify-icon class="active"
+                                                        icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon class="active"
+                                                        icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                                    <span>2.0 & up</span>
+                                                </div>
+                                            </label><br><br>
+                                            <input type="checkbox" id="1s">
+                                            <label for="1s">
+                                                <div class="ratings d-flex">
+                                                    <iconify-icon class="active"
+                                                        icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                                    <span>1.0 & up</span>
+                                                </div>
+                                            </label><br><br>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed btnshadow" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
+                                            aria-expanded="false" aria-controls="flush-collapseFour">
+                                            <b>Popular Tag</b>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <div class="tagsCon">
+                                                <button>Healthy</button>
+                                                <button>Vegetarian</button>
+                                                <button class="active">Low Fat</button>
+                                                <button>Kid Foods</button>
+                                                <button>Vitamins</button>
+                                                <button>Bread</button>
+                                                <button>Meat</button>
+                                                <button>Snacks</button>
+                                                <button>Tiffin</button>
+                                                <button>Lunch</button>
+                                                <button>Dinner</button>
+                                                <button>Breakfast</button>
+                                                <button>Fruits</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="brandRight col-lg-8 d-flex align-items-center">
-                            <p>Share item:</p>
-                            <ul class="d-flex">
-                                <li><a href="#"><iconify-icon icon="fa7-brands:facebook-f" width="20" height="20"></iconify-icon></a></li>
-                                <li><a href="#"><iconify-icon icon="mdi:twitter" width="20" height="20"></iconify-icon></a></li>
-                                <li><a href="#"><iconify-icon icon="fa6-brands:pinterest-p" width="20" height="20"></iconify-icon></a></li>
-                                <li><a href="#"><iconify-icon icon="mdi:instagram" width="20" height="20"></iconify-icon></a></li>
-                            </ul>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="prgrph">
-                        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla nibh diam, blandit vel consequat nec, ultrices et ipsum. Nulla varius magna a consequat pulvinar.</p>
-                    </div>
-                    <hr>
-                    <div class="addtocart d-flex align-items-center justify-content-between">
-                        <div class="limit col-lg-3">
-                            <button class="minus">-</button>
-                            <input id="quantity" type="number" value="1" min="1">
-                            <button class="plus">+</button>
-                        </div>
-                        <div class="addcart col-lg-7 justify-content-center d-flex">
-                            <button>Add to Cart <iconify-icon icon="heroicons:shopping-bag" width="24" height="24"></iconify-icon></button>
-                        </div>
-                        <div class="wishlist col-lg-2">
-                            <button><iconify-icon icon="solar:heart-linear" width="20" height="20"></iconify-icon></button>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="btm">
-                        <p>Category: <span>Vegetables</span></p>
-                        <div class="detTag">
-                            <h6>Tag: </h6>
-                            <ul class="d-flex">
-                                <li><a href="#">Vegetables</a></li>
-                                <li><a href="#">Healthy</a></li>
-                                <li><a href="#" class="pwr">Chinese Cabbage</a></li>
-                                <li><a href="#">Green Cabbage</a></li>
-                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <ul class="nav justify-content-center">
-                    <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#desc" type="button">Descriptions</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#info" type="button">Additional Information</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#feedback" type="button">Customer Feedback</a>
-                    </li>
-                </ul>
-                <div class="tab-pane fade" id="desc">
-                    <div class="description d-flex gap-4" >
-                        <div class="desLeft col-lg-6">
-                            <p>Sed commodo aliquam dui ac porta. Fusce ipsum felis, imperdiet at posuere ac, viverra at mauris. Maecenas tincidunt ligula a sem vestibulum pharetra. Maecenas auctor tortor lacus, nec laoreet nisi porttitor vel. Etiam tincidunt metus vel dui interdum sollicitudin. Mauris sem ante, vestibulum nec orci vitae, aliquam mollis lacus. Sed et condimentum arcu, id molestie tellus. Nulla facilisi. Nam scelerisque vitae justo a convallis. Morbi urna ipsum, placerat quis commodo quis, egestas elementum leo. Donec convallis mollis enim. Aliquam id mi quam. Phasellus nec fringilla elit.</p>
-                            <br>
-                            <p>Nulla mauris tellus, feugiat quis pharetra sed, gravida ac dui. Sed iaculis, metus faucibus elementum tincidunt, turpis mi viverra velit, pellentesque tristique neque mi eget nulla. Proin luctus elementum neque et pharetra. </p>
-                            <br>
-                            <ul class="checklist">
-                                <li>100 g of fresh leaves provides.</li>
-                                <li>Aliquam ac est at augue volutpat elementum.</li>
-                                <li>Quisque nec enim eget sapien molestie.</li>
-                                <li>Proin convallis odio volutpat finibus posuere.</li>
-                            </ul>
-                            <br>
-                            <p>Cras et diam maximus, accumsan sapien et, sollicitudin velit. Nulla blandit eros non turpis lobortis iaculis at ut massa. </p>
-                        </div>
-                        <div class="defRight col-lg-6">
-                            <img src="./images/sobjiwala.png" alt="" class="img-fluid">
-                            <div class="ajaira">
-                                <div class="col-lg-6">
-                                    <div class="hudai">
-                                        <div class="hudai1">
-                                            <img src="./images/damer tag.png" alt="" class="img-fluid">
-                                            <ul>
-                                                <li><b>64% Discount</b></li>
-                                                <li>Save your 64% money with us</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="hudai">
-                                        <div class="hudai1">
-                                            <img src="./images/pata.png" alt="" class="img-fluid">
-                                            <ul>
-                                                <li><b>100% Organic</b></li>
-                                                <li>100% Organic Vegetables</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="info">
-                    <div class="informaiton d-flex gap-4">
-                        <div class="infoLeft col-lg-6">
-                            <h6>Weight: <span>03</span></h6>
-                            <h6>Color: <span>Green</span></h6>
-                            <h6>Type: <span>Organic</span></h6>
-                            <h6>Category: <span>Vegetables</span></h6>
-                            <h6>Stock Status: <span>Available <span>(5,413)</span></span></h6>
-                            <h6 class="d-flex gap-2">Tags: <p><a href="#">Vegetables</a>, <a href="#">Healthy</a>, <a href="#"
-                                        class="pwr">Chinese Cabbage</a>, <a href="#">Green Cabbage</a></p>
-                            </h6>
-                        </div>
-                        <div class="defRight col-lg-6">
-                            <img src="./images/sobjiwala.png" alt="" class="img-fluid">
-                            <div class="ajaira">
-                                <div class="col-lg-6">
-                                    <div class="hudai">
-                                        <div class="hudai1">
-                                            <img src="./images/damer tag.png" alt="" class="img-fluid">
-                                            <ul>
-                                                <li><b>64% Discount</b></li>
-                                                <li>Save your 64% money with us</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="hudai">
-                                        <div class="hudai1">
-                                            <img src="./images/pata.png" alt="" class="img-fluid">
-                                            <ul>
-                                                <li><b>100% Organic</b></li>
-                                                <li>100% Organic Vegetables</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="feedback">
-                                <p>This is Customer Feedback</p>
-                            </div>
-            <section id="home_new" class="relate">
-       <div class="container">
-           <div class="row heading justify-content-between align-items-md-center mb-4">
-               <div class="col-lg-4 col-md-4">
-                   <h4>Related Products</h4>
-               </div>
-               <div class="col-lg-2 col-md-4 text-md-end">
-                   <a href="#">View All <iconify-icon icon="solar:arrow-right-outline"></iconify-icon></a>
-               </div>
-           </div>
-           <div class="row">
-               <div class="col-6 col-md col-lg mb-2 mb-lg-0">
-                   <div class="newProCard">
-                       <div class="newProdImg">
-                           <img src="./images/newPro1.png" class="img-fluid" alt="">
-                           <ul class="newProCardLinks">
-                               <li><a href="#"><iconify-icon icon="solar:heart-linear"></iconify-icon></a></li>
-                               <li><a href="./images/newPro1.png" class="venobox" data-gall="gallery01"><iconify-icon icon="solar:eye-linear"></iconify-icon></a></li>
-                           </ul>
-                       </div>
-                       <div class="newProdCnt">
-                           <a href="#">Green Apple</a>
-                           <p>$14.99</p>
-                           <div class="newProReviews">
-                               <iconify-icon icon="material-symbols:star"></iconify-icon>
-                               <iconify-icon icon="material-symbols:star"></iconify-icon>
-                               <iconify-icon icon="material-symbols:star"></iconify-icon>
-                               <iconify-icon icon="material-symbols:star"></iconify-icon>
-                               <iconify-icon icon="material-symbols:star"></iconify-icon>
-                           </div>
-                           <a href="#" class="newProcartBtn"><iconify-icon icon="streamline:shopping-bag-hand-bag-2" width="17" height="17"></iconify-icon></a>
-                       </div>
-                   </div>
-               </div>
-               <div class="col-6 col-md col-lg mb-2 mb-lg-0">
-                   <div class="newProCard">
-                       <div class="newProdImg">
-                           <img src="./images/newPro2.png" class="img-fluid" alt="">
-                           <ul class="newProCardLinks">
-                               <li><a href="#"><iconify-icon icon="solar:heart-linear"></iconify-icon></a></li>
-                               <li><a href="./images/newPro2.png" class="venobox" data-gall="gallery01"><iconify-icon icon="solar:eye-linear"></iconify-icon></a></li>
-                           </ul>
-                       </div>
-                       <div class="newProdCnt">
-                           <a href="#">Cabbage</a>
-                           <p>$14.99</p>
-                           <div class="newProReviews">
-                               <iconify-icon icon="material-symbols:star"></iconify-icon>
-                               <iconify-icon icon="material-symbols:star"></iconify-icon>
-                               <iconify-icon icon="material-symbols:star"></iconify-icon>
-                               <iconify-icon icon="material-symbols:star"></iconify-icon>
-                               <iconify-icon icon="material-symbols:star"></iconify-icon>
-                           </div>
-                           <a href="#" class="newProcartBtn"><iconify-icon icon="streamline:shopping-bag-hand-bag-2" width="17" height="17"></iconify-icon></a>
-                       </div>
-                   </div>
-               </div>
-               <div class="col-6 col-md col-lg mb-2 mb-lg-0">
-                   <div class="newProCard">
-                       <div class="newProdImg">
-                           <img src="./images/newPro3.png" class="img-fluid" alt="">
-                           <ul class="newProCardLinks">
-                               <li><a href="#"><iconify-icon icon="solar:heart-linear"></iconify-icon></a></li>
-                               <li><a href="./images/newPro3.png" class="venobox" data-gall="gallery01"><iconify-icon icon="solar:eye-linear"></iconify-icon></a></li>
-                           </ul>
-                       </div>
-                       <div class="newProdCnt">
-                           <a href="#">Lettuce</a>
-                           <p>$14.99</p>
-                           <div class="newProReviews">
-                               <iconify-icon icon="material-symbols:star"></iconify-icon>
-                               <iconify-icon icon="material-symbols:star"></iconify-icon>
-                               <iconify-icon icon="material-symbols:star"></iconify-icon>
-                               <iconify-icon icon="material-symbols:star"></iconify-icon>
-                               <iconify-icon icon="material-symbols:star"></iconify-icon>
-                           </div>
-                           <a href="#" class="newProcartBtn"><iconify-icon icon="streamline:shopping-bag-hand-bag-2" width="17" height="17"></iconify-icon></a>
-                       </div>
-                   </div>
-               </div>
-               <div class="col-6 col-md col-lg mb-2 mb-lg-0">
-                   <div class="newProCard">
-                       <div class="newProdImg">
-                           <img src="./images/newPro4.png" class="img-fluid" alt="">
-                           <ul class="newProCardLinks">
-                               <li><a href="#"><iconify-icon icon="solar:heart-linear"></iconify-icon></a></li>
-                               <li><a href="./images/newPro4.png" class="venobox" data-gall="gallery01"><iconify-icon icon="solar:eye-linear"></iconify-icon></a></li>
-                           </ul>
-                       </div>
-                       <div class="newProdCnt">
-                           <a href="#">Capsicum</a>
-                           <p>$14.99</p>
-                           <div class="newProReviews">
-                               <iconify-icon icon="material-symbols:star"></iconify-icon>
-                               <iconify-icon icon="material-symbols:star"></iconify-icon>
-                               <iconify-icon icon="material-symbols:star"></iconify-icon>
-                               <iconify-icon icon="material-symbols:star"></iconify-icon>
-                               <iconify-icon icon="material-symbols:star"></iconify-icon>
-                           </div>
-                           <a href="#" class="newProcartBtn"><iconify-icon icon="streamline:shopping-bag-hand-bag-2" width="17" height="17"></iconify-icon></a>
-                       </div>
-                   </div>
-               </div>
-               <div class="col-6 col-md col-lg">
-                   <div class="newProCard">
-                       <div class="newProdImg">
-                           <img src="./images/newPro5.png" class="img-fluid" alt="">
-                           <ul class="newProCardLinks">
-                               <li><a href="#"><iconify-icon icon="solar:heart-linear"></iconify-icon></a></li>
-                               <li><a href="./images/newPro5.png" class="venobox" data-gall="gallery01"><iconify-icon icon="solar:eye-linear"></iconify-icon></a></li>
-                           </ul>
-                       </div>
-                       <div class="newProdCnt">
-                           <a href="#">Corn</a>
-                           <p>$14.99</p>
-                           <div class="newProReviews">
-                               <iconify-icon icon="material-symbols:star"></iconify-icon>
-                               <iconify-icon icon="material-symbols:star"></iconify-icon>
-                               <iconify-icon icon="material-symbols:star"></iconify-icon>
-                               <iconify-icon icon="material-symbols:star"></iconify-icon>
-                               <iconify-icon icon="material-symbols:star"></iconify-icon>
-                           </div>
-                           <a href="#" class="newProcartBtn"><iconify-icon icon="streamline:shopping-bag-hand-bag-2" width="17" height="17"></iconify-icon></a>
-                       </div>
-                   </div>
-               </div>
-           </div>
-       </div>
-    </section>
         </div>
     </section>
+
     <!-- ----------------------------------------------------------------------- -->
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                            Veg Menu Section                             -->
+    <section id="vegMenu">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                    <div class="parent">
+                        <div class="child">
+                            <div class="childImg">
+                                <a href="#"><img src="./images/red chilli.png" class="img-fluid" alt=""></a>
+                                <ul class="link">
+                                    <li><a href="#" class="heart"><iconify-icon
+                                                icon="solar:heart-linear"></iconify-icon></a></li>
+                                    <li><a href="#" class="eye"><iconify-icon icon="lucide:eye"></iconify-icon></a></li>
+                                </ul>
+                            </div>
+                            <div class="childContent">
+                                <p>Red Chili</p>
+                                <h5>$14.99</h5>
+                                <div class="clientsRating">
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                </div>
+                                <a href="#" class="bagwati"><iconify-icon icon="streamline:shopping-bag-hand-bag-2"
+                                        width="17" height="17"></iconify-icon></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                    <div class="parent">
+                        <div class="child">
+                            <div class="childImg">
+                                <a href="#"><img src="./images/potato.png" class="img-fluid" alt=""></a>
+                                <ul class="link">
+                                    <li><a href="#" class="heart"><iconify-icon
+                                                icon="solar:heart-linear"></iconify-icon></a></li>
+                                    <li><a href="#" class="eye"><iconify-icon icon="lucide:eye"></iconify-icon></a></li>
+                                </ul>
+                            </div>
+                            <div class="childContent">
+                                <p>Potato</p>
+                                <h5>$14.99</h5>
+                                <div class="clientsRating">
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                </div>
+                                <a href="#" class="bagwati"><iconify-icon icon="streamline:shopping-bag-hand-bag-2"
+                                        width="17" height="17"></iconify-icon></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                    <div class="parent">
+                        <div class="child">
+                            <div class="childImg">
+                                <a href="./item.html"><img src="./images/cabbage.png" class="img-fluid" alt=""></a>
+                                <ul class="link">
+                                    <li><a href="#" class="heart"><iconify-icon
+                                                icon="solar:heart-linear"></iconify-icon></a></li>
+                                    <li><a href="#" class="eye"><iconify-icon icon="lucide:eye"></iconify-icon></a></li>
+                                </ul>
+                            </div>
+                            <div class="childContent">
+                                <p>Chinese Cabbage</p>
+                                <h5>$14.99</h5>
+                                <div class="clientsRating">
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                </div>
+                                <a href="#" class="bagwati"><iconify-icon icon="streamline:shopping-bag-hand-bag-2"
+                                        width="17" height="17"></iconify-icon></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                    <div class="parent">
+                        <div class="child">
+                            <div class="childImg">
+                                <a href="#"><img src="./images/corn.png" class="img-fluid" alt=""></a>
+                                <div class="stkout">Out of Stock</div>
+                                <ul class="link">
+                                    <li><a href="#" class="heart"><iconify-icon
+                                                icon="solar:heart-linear"></iconify-icon></a></li>
+                                    <li><a href="#" class="eye"><iconify-icon icon="lucide:eye"></iconify-icon></a></li>
+                                </ul>
+                            </div>
+                            <div class="childContent">
+                                <p>Corn</p>
+                                <h5>$14.99 <span>$20.99</span></h5>
+                                <div class="clientsRating">
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                </div>
+                                <a href="#" class="bagwati"><iconify-icon icon="streamline:shopping-bag-hand-bag-2"
+                                        width="17" height="17"></iconify-icon></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                    <div class="parent">
+                        <div class="child">
+                            <div class="childImg">
+                                <a href="#"><img src="./images/tom tom.png" class="img-fluid" alt=""></a>
+                                <ul class="link">
+                                    <li><a href="#" class="heart"><iconify-icon
+                                                icon="solar:heart-linear"></iconify-icon></a></li>
+                                    <li><a href="#" class="eye"><iconify-icon icon="lucide:eye"></iconify-icon></a></li>
+                                </ul>
+                            </div>
+                            <div class="childContent">
+                                <p>Red Tomato</p>
+                                <h5>$14.99</h5>
+                                <div class="clientsRating">
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                </div>
+                                <a href="#" class="bagwati"><iconify-icon icon="streamline:shopping-bag-hand-bag-2"
+                                        width="17" height="17"></iconify-icon></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                    <div class="parent">
+                        <div class="child">
+                            <div class="childImg">
+                                <a href="#"><img src="./images/begun.png" class="img-fluid" alt=""></a>
+                                <ul class="link">
+                                    <li><a href="#" class="heart"><iconify-icon
+                                                icon="solar:heart-linear"></iconify-icon></a></li>
+                                    <li><a href="#" class="eye"><iconify-icon icon="lucide:eye"></iconify-icon></a></li>
+                                </ul>
+                            </div>
+                            <div class="childContent">
+                                <p>Eggplant</p>
+                                <h5>$14.99</h5>
+                                <div class="clientsRating">
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                </div>
+                                <a href="#" class="bagwati"><iconify-icon icon="streamline:shopping-bag-hand-bag-2"
+                                        width="17" height="17"></iconify-icon></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                    <div class="parent">
+                        <div class="child">
+                            <div class="childImg">
+                                <a href="#"><img src="./images/fulkopi.png" class="img-fluid" alt=""></a>
+                                <ul class="link">
+                                    <li><a href="#" class="heart"><iconify-icon
+                                                icon="solar:heart-linear"></iconify-icon></a></li>
+                                    <li><a href="#" class="eye"><iconify-icon icon="lucide:eye"></iconify-icon></a></li>
+                                </ul>
+                            </div>
+                            <div class="childContent">
+                                <p>Fresh Cauliflower</p>
+                                <h5>$14.99</h5>
+                                <div class="clientsRating">
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                </div>
+                                <a href="#" class="bagwati"><iconify-icon icon="streamline:shopping-bag-hand-bag-2"
+                                        width="17" height="17"></iconify-icon></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                    <div class="parent">
+                        <div class="child">
+                            <div class="childImg">
+                                <a href="#"><img src="./images/big image1.png" class="img-fluid" alt=""></a>
+                                <ul class="link">
+                                    <li><a href="#" class="heart"><iconify-icon
+                                                icon="solar:heart-linear"></iconify-icon></a></li>
+                                    <li><a href="#" class="eye"><iconify-icon icon="lucide:eye"></iconify-icon></a></li>
+                                </ul>
+                            </div>
+                            <div class="childContent">
+                                <p>Green Apple</p>
+                                <h5>$14.99</h5>
+                                <div class="clientsRating">
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                </div>
+                                <a href="#" class="bagwati"><iconify-icon icon="streamline:shopping-bag-hand-bag-2"
+                                        width="17" height="17"></iconify-icon></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                    <div class="parent">
+                        <div class="child">
+                            <div class="childImg">
+                                <a href="#"><img src="./images/aamm.png" class="img-fluid" alt=""></a>
+                                <ul class="link">
+                                    <li><a href="#" class="heart"><iconify-icon
+                                                icon="solar:heart-linear"></iconify-icon></a></li>
+                                    <li><a href="#" class="eye"><iconify-icon icon="lucide:eye"></iconify-icon></a></li>
+                                </ul>
+                            </div>
+                            <div class="childContent">
+                                <p>Fresh Mango</p>
+                                <h5>$14.99</h5>
+                                <div class="clientsRating">
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                </div>
+                                <a href="#" class="bagwati"><iconify-icon icon="streamline:shopping-bag-hand-bag-2"
+                                        width="17" height="17"></iconify-icon></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                    <div class="parent">
+                        <div class="child">
+                            <div class="childImg">
+                                <a href="#"><img src="./images/capcicum.png" class="img-fluid" alt=""></a>
+                                <ul class="link">
+                                    <li><a href="#" class="heart"><iconify-icon
+                                                icon="solar:heart-linear"></iconify-icon></a></li>
+                                    <li><a href="#" class="eye"><iconify-icon icon="lucide:eye"></iconify-icon></a></li>
+                                </ul>
+                            </div>
+                            <div class="childContent">
+                                <p>Green Capsicum</p>
+                                <h5>$14.99</h5>
+                                <div class="clientsRating">
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                </div>
+                                <a href="#" class="bagwati"><iconify-icon icon="streamline:shopping-bag-hand-bag-2"
+                                        width="17" height="17"></iconify-icon></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                    <div class="parent">
+                        <div class="child">
+                            <div class="childImg">
+                                <a href="#"><img src="./images/kaca jhal.png" class="img-fluid" alt=""></a>
+                                <ul class="link">
+                                    <li><a href="#" class="heart"><iconify-icon
+                                                icon="solar:heart-linear"></iconify-icon></a></li>
+                                    <li><a href="#" class="eye"><iconify-icon icon="lucide:eye"></iconify-icon></a></li>
+                                </ul>
+                            </div>
+                            <div class="childContent">
+                                <p>Green Chili</p>
+                                <h5>$14.99</h5>
+                                <div class="clientsRating">
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                </div>
+                                <a href="#" class="bagwati"><iconify-icon icon="streamline:shopping-bag-hand-bag-2"
+                                        width="17" height="17"></iconify-icon></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                    <div class="parent">
+                        <div class="child">
+                            <div class="childImg">
+                                <a href="#"><img src="./images/cucumba.png" class="img-fluid" alt=""></a>
+                                <div class="sale">Sale 50%</div>
+                                <ul class="link">
+                                    <li><a href="#" class="heart"><iconify-icon
+                                                icon="solar:heart-linear"></iconify-icon></a></li>
+                                    <li><a href="#" class="eye"><iconify-icon icon="lucide:eye"></iconify-icon></a></li>
+                                </ul>
+                            </div>
+                            <div class="childContent">
+                                <p>Green Cucumber</p>
+                                <h5>$14.99 <span>$20.99</span></h5>
+                                <div class="clientsRating">
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                </div>
+                                <a href="#" class="bagwati"><iconify-icon icon="streamline:shopping-bag-hand-bag-2"
+                                        width="17" height="17"></iconify-icon></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                    <div class="parent">
+                        <div class="child">
+                            <div class="childImg">
+                                <a href="#"><img src="./images/big image1.png" class="img-fluid" alt=""></a>
+                                <ul class="link">
+                                    <li><a href="#" class="heart"><iconify-icon
+                                                icon="solar:heart-linear"></iconify-icon></a></li>
+                                    <li><a href="#" class="eye"><iconify-icon icon="lucide:eye"></iconify-icon></a></li>
+                                </ul>
+                            </div>
+                            <div class="childContent">
+                                <p>Green Apple</p>
+                                <h5>$14.99</h5>
+                                <div class="clientsRating">
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                </div>
+                                <a href="#" class="bagwati"><iconify-icon icon="streamline:shopping-bag-hand-bag-2"
+                                        width="17" height="17"></iconify-icon></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                    <div class="parent">
+                        <div class="child">
+                            <div class="childImg">
+                                <a href="#"><img src="./images/litucce.png" class="img-fluid" alt=""></a>
+                                <ul class="link">
+                                    <li><a href="#" class="heart"><iconify-icon
+                                                icon="solar:heart-linear"></iconify-icon></a></li>
+                                    <li><a href="#" class="eye"><iconify-icon icon="lucide:eye"></iconify-icon></a></li>
+                                </ul>
+                            </div>
+                            <div class="childContent">
+                                <p>Green Lettuce</p>
+                                <h5>$14.99</h5>
+                                <div class="clientsRating">
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star"></iconify-icon>
+                                </div>
+                                <a href="#" class="bagwati"><iconify-icon icon="streamline:shopping-bag-hand-bag-2"
+                                        width="17" height="17"></iconify-icon></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+    <!-- ----------------------------------------------------------------------- -->
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                               Pagination                                -->
+    <nav aria-label="Page navigation example">
+        <ul class="pagination pg_num">
+            <li class="page-item">
+                <a class="page-lin" href="#" aria-label="Previous">
+                    <span class="move" aria-hidden="true"><iconify-icon icon="oui:arrow-left" width="20"
+                            height="20"></iconify-icon></span>
+                </a>
+            </li>
+            <li class="page-item"><a class="page-link present" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-lin" href="#" aria-label="Next">
+                    <span class="move" aria-hidden="true"><iconify-icon icon="oui:arrow-right" width="20"
+                            height="20"></iconify-icon></span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- ----------------------------------------------------------------------- -->
+
+
+
 
     <!-- ----------------------------------------------------------------------- -->
     <!--                           Newsletter Section                            -->
@@ -626,8 +957,8 @@
                 <div class="col-lg-3">
                     <div class="description">
                         <h5>About Shopery</h5>
-                        <p>Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis dui, eget bibendum magna congue
-                            nec.</p>
+                        <p>Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis dui, eget bibendum magna
+                            congue nec.</p>
                         <a class="supportNumberMail" href="callto:(219) 555-0114">(219) 555-0114</a>
                         <span>or</span>
                         <a class="supportNumberMail" href="mailto:proxy@gmail.com">proxy@gmail.com</a>
@@ -691,7 +1022,8 @@
                                 <div class="playstore">
                                     <div class="row align-items-center">
                                         <div class="col-lg-3 col-3">
-                                            <span class="apps_logo"><iconify-icon icon="mage:playstore"></iconify-icon></span>
+                                            <span class="apps_logo"><iconify-icon
+                                                    icon="mage:playstore"></iconify-icon></span>
                                         </div>
                                         <div class="col-lg-9 col-9">
                                             <a href="#">
@@ -727,6 +1059,8 @@
     </footer>
     <!-- ----------------------------------------------------------------------- -->
 
+
+
     <a href="#" class="goToTop"><iconify-icon icon="ep:arrow-up-bold"></iconify-icon></a>
 
     <script src="./js/jquery-3.7.1.min.js"></script>
@@ -738,4 +1072,5 @@
     <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
+
 </html>

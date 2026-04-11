@@ -54,9 +54,13 @@ a {
     text-decoration: none;
 }
 
-h1,h2,h3,h4,h5,h6,address,ul,ol,span,p, button {
+h1,h2,h3,h4,h5,h6,address,ul,ol,span,p, button,table,td,tr,thead,tbody {
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
 }
 
 .goToTop {
@@ -2184,21 +2188,11 @@ footer .footer_social_links ul li:hover a{
     gap: 12px;
 }
 
-.productDemo a iconify-icon {
-    font-size: 24px;
-    color: var(--gray-scale-gray-â€“-500);
-    margin-bottom: 56px;
-}
-
-.productDemo a.bottoms {
-    margin-top: 56px;
-}
-
 .productCnt h2 {
     font-weight: 600;
     font-size: 36px;
     line-height: 120%;
-    color: var(--gray-scale-gray-–-900);
+    color: var(--gray-scale-gray-â€“-900);
     margin-bottom: 12px;
 }
 
@@ -2335,22 +2329,20 @@ footer .footer_social_links ul li:hover a{
     gap: 12px;
 }
 
-.addtocart .limit {
-    border: 1px solid var(--gray-scale-gray-â€“-200);
+.limit {
+    border: 1px solid var(--gray-scale-gray-â€“-100);
     border-radius: 170px;
     padding: 8px;
-    background: var(--gray-scale-white);
+    width: 124px;
+    height: 50px;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .limit button {
     padding: 8px 0;
-    border-radius: 170px;
+    border-radius: 50%;
     width: 34px;
     height: 34px;
-    font-size: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2359,17 +2351,22 @@ footer .footer_social_links ul li:hover a{
     background: var(--gray-scale-gray-â€“-50);
 }
 
-.addtocart .limit input {
-    font-family: var(--font-family);
+.limit input {
     font-weight: 400;
-    font-size: 20px;
-    border: none;
-    outline: none;
     font-size: 16px;
-    max-width: 40px;
     line-height: 150%;
     text-align: center;
     color: var(--gray-scale-gray-â€“-900);
+    max-width: 40px;
+    border: none;
+}
+
+.limit input::-webkit-outer-spin-button,
+.limit input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  border: none;
+  outline: none;
 }
 
 .addcart button {
@@ -2571,5 +2568,149 @@ font-size: 14px;
 line-height: 150%;
 color: var(--gray-scale-gray-â€“-600);
 margin-right: 0;
+}
+/* -------------------------------------------------------------------------- */
+
+/*Cart page*/
+
+/* -------------------------------------------------------------------------- */
+/*                                  Captions                                  */
+#captions h1 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--gray-scale-gray-â€“-900);
+    margin: 40px auto 32px;
+}
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                                 Cart Table                                 */
+table {
+    border: 1px solid var(--gray-scale-gray-â€“-100);
+    border-radius: 12px;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+table thead {
+    border-bottom: 1px solid var(--gray-scale-gray-â€“-100);
+    text-align: center;
+}
+
+table thead tr th {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--gray-scale-gray-â€“-500);
+    padding: 16px 20px;
+}
+
+table thead tr th:first-child {
+    text-align: left;
+}
+
+table tbody {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-â€“-900);
+    padding: 16px 20px;
+}
+
+tbody tr {
+    border-bottom: 1px solid var(--gray-scale-gray-â€“-100);
+}
+
+tbody tr td {
+    padding: 12px 20px;
+}
+
+.added .cnt a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-â€“-900);
+    margin-left: 12px;
+}
+
+tbody tr td button {
+    background: transparent;
+    border: 1px solid var(--gray-scale-gray-â€“-100);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+    color: var(--gray-scale-gray-â€“-500);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+tbody tr td .btnCart {
+    border: none;
+    border-radius: 43px;
+    padding: 14px 32px;
+    width: 168px;
+    height: 45px;
+    background: var(--gray-scale-gray-â€“-50);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 120%;
+    color: var(--gray-scale-gray-â€“-700);
+}
+
+.coupon {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    border: 1px solid var(--gray-scale-gray-â€“-100);
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+}
+
+.coupon h6 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-â€“-900);
+}
+
+.coupon input {
+    border: 1px solid var(--gray-scale-gray-â€“-100);
+    border-radius: 46px;
+    padding: 14px 24px;
+    max-width: 531px;
+    width: 100%;
+    height: 52px;
+}
+
+.coupon .inputBox {
+    position: relative;    
+}
+
+.coupon .inputBox button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    background: var(--gray-scale-gray-â€“-800);
+    color: var(--gray-scale-white);
+    border: none;
+    border-radius: 43px;
+    padding: 16px 40px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .25s;
+}
+
+.coupon .inputBox button:hover {
+    background: var(--branding-success);
 }
 /* -------------------------------------------------------------------------- */
