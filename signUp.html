@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping Cart</title>
+    <title>Sign In</title>
     <link rel="icon" href="./images/icon.png">
     <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/venobox.min.css">
@@ -12,7 +11,6 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel='stylesheet' href="./css/responsive.css">
 </head>
-
 <body>
     <!-- ----------------------------------------------------------------------- -->
     <!--                                 Header                                  -->
@@ -272,9 +270,8 @@
     </header>
     <!-- ----------------------------------------------------------------------- -->
 
-    <!-- ----------------------------------------------------------------------- -->
-    <!--                             Heading Section                             -->
-    <section id="heading">
+    <!-- navigationbar -->
+    <section id="navigationBar">
         <div class="container">
             <div class="col-lg-12 col-12 d-flex">
                 <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="breadCrumb">
@@ -282,140 +279,45 @@
                         <li class="breadcrumb-item"><a href="index.html"><iconify-icon
                                     icon="material-symbols-light:home-outline" width="24"
                                     height="24"></iconify-icon></a></li>
-                        <li class="breadcrumb-item on" aria-current="page">Shopping Cart</li>
+                        <li class="breadcrumb-item on" aria-current="page">Sign Up</li>
                     </ol>
                 </nav>
             </div>
         </div>
     </section>
-    <!-- ----------------------------------------------------------------------- -->
+    <!-- navigationbar ends here -->
 
-    <!-- ----------------------------------------------------------------------- -->
-    <!--                             Caption Section                             -->
-    <section id="captions">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>My Shopping Cart</h1>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ----------------------------------------------------------------------- -->
-
-    <!-- ----------------------------------------------------------------------- -->
-    <!--                               Cart Table                                -->
-    <section id="cartTable">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-12 col-md-12">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Product</th>
-                                <th>Price</th>
-                                <th>Quantity</th>
-                                <th>Subtotal</th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <div class="added d-flex flex-wrap flex-md-nowrap align-items-center gap-3">
-                                        <div class="col-3">
-                                            <a href="#"><img src="./images/cart img.png" alt="" class="img-fluid"></a>
-                                        </div>
-                                        <div class="col-9">
-                                            <div class="cnt">
-                                                <a href="#" class="productNames">Green Lettuce</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>$14.99</td>
-                                <td>
-                                    <div class="limit d-flex align-items-center">
-                                        <button class="minus">-</button>
-                                        <input id="quantity" type="number" value="5" min="1">
-                                        <button class="plus">+</button>
-                                    </div>
-                                </td>
-                                <td>$70.00</td>
-                                <td><button><iconify-icon icon="bitcoin-icons:cross-filled"></iconify-icon></button></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="added d-flex align-items-center gap-3">
-                                        <div class="col-3">
-                                            <a href="#"><img src="./images/cart img 2.png" alt="" class="img-fluid"></a>
-                                        </div>
-                                        <div class="col-9">
-                                            <div class="cnt">
-                                                <a href="#" class="productNames">Green Lettuce</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>$14.99</td>
-                                <td>
-                                    <div class="limit d-flex align-items-center">
-                                        <button class="minus">-</button>
-                                        <input id="quantity" type="number" value="1" min="1">
-                                        <button class="plus">+</button>
-                                    </div>
-                                </td>
-                                <td>$14.99</td>
-                                <td><button><iconify-icon icon="bitcoin-icons:cross-filled"></iconify-icon></button></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <button class="btnCart" onclick="window.location.href='./shop.html'">Return to shop</button>
-                                </td>
-                                <td></td>
-                                <td></td>
-                                <td>
-                                    <button class="btnCart">Update Cart</button>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="coupon">
-                        <div class="col-kg-3">
-                            <h6>Coupon Code</h6>
+     <!-- loginForm section starting -->
+        <section id="loginForm">
+            <div class="container">
+                <div class="row">
+                    <div class="card signupCard col-lg-6 col-md-8 col-11 mx-auto">
+                        <h1>Create Account</h1>
+                        <input type="text" placeholder="Full Name">
+                        <input type="text" placeholder="Username">
+                        <input type="email" placeholder="Email">
+                        <div class="newpass">
+                            <input type="password" placeholder="Create New Password">
+                            <button><iconify-icon icon="iconamoon:eye-light"></iconify-icon></button>
                         </div>
-                        <div class="col-lg-9">
-                            <div class="inputBox">
-                                <input type="text" placeholder="Enter your coupon code">
-                                <button>Apply Coupon</button>
-                            </div>
+                        <div class="newpass_2">
+                            <input type="password" placeholder="Confirm New Password">
+                            <button><iconify-icon icon="iconamoon:eye-light"></iconify-icon></button>
                         </div>
+                        <div class="terms align-items-center d-flex gap-2">
+                            <input type="checkbox" id="terms">
+                            <label for="terms">Accept all Terms and Conditions</label>
+                        </div>
+                        <button class="loginBtn d-block mx-auto w-100">Createt Account</button>
+                        <p class="signUp text-center">Already have an account? <a href="./signIn.html">Login</a></p>
                     </div>
                 </div>
-                <div class="cartPrice col-lg-4">
-                    <div class="total">
-                        <h6>Cart Total</h6>
-                        <div class="itemData d-flex justify-content-between">
-                            <p>Subtotal:</p>
-                            <span>$84.99</span>
-                        </div>
-                        <div class="itemData d-flex justify-content-between">
-                            <p>Shipping:</p>
-                            <span>Free</span>
-                        </div>
-                        <div class="itemData d-flex justify-content-between">
-                            <p>Total:</p>
-                            <span><b>$84.99</b></span>
-                        </div>
-                        <button class="checkoutBtn">Proceed to checkout</button>
-                    </div>
             </div>
-        </div>
-    </section>
-    <!-- ----------------------------------------------------------------------- -->
+        </section>
+        <!-- loginForm section ending -->
 
-    <!-- ----------------------------------------------------------------------- -->
-    <!--                           Newsletter Section                            -->
+
+    <!-- newsletter -->
     <section id="home_newsletter">
         <div class="container">
             <div class="row justify-content-between align-items-center">
@@ -439,10 +341,8 @@
             </div>
         </div>
     </section>
-    <!-- ----------------------------------------------------------------------- -->
-
-    <!-- ----------------------------------------------------------------------- -->
-    <!--                             Footer Section                              -->
+    <!-- newsletter ends here -->
+    <!-- footer -->
     <footer>
         <div class="container">
             <div class="row pb-lg-5">
@@ -549,7 +449,7 @@
             </div>
         </div>
     </footer>
-    <!-- ----------------------------------------------------------------------- -->
+    <!-- footer ends here -->
 
     <a href="#" class="goToTop"><iconify-icon icon="ep:arrow-up-bold"></iconify-icon></a>
 
@@ -561,5 +461,4 @@
     <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
-
 </html>

@@ -35,7 +35,7 @@
                                 <option value="">BDT</option>
                             </select>
                         </form>
-                        <div class="anchor"><a href="#">Sign In</a> / <a href="#">Sign Up</a></div>
+                        <div class="anchor"><a href="./signIn.html">Sign In</a> / <a href="#">Sign Up</a></div>
                     </div>
                 </div>
             </div>
@@ -89,7 +89,7 @@
                                     <li>
                                         <a href="#">Categories</a>
                                         <ul class="homeCat">
-                                            <li><a href="./item.html">Vegetables</a></li>
+                                            <li><a href="./shop.html">Vegetables</a></li>
                                             <li><a href="#">Fruits</a></li>
                                             <li><a href="#">Grains</a></li>
                                         </ul>
@@ -247,11 +247,25 @@
                     </div>
                     <div class="offcanvas-body phnMenu">
                         <ul class="align-items-center">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Shop</a></li>
+                            <li><a href="./index.html">Home</a></li>
+                            <li>
+                                <p class="d-inline-flex gap-1">
+                                    <a class="btn" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                                        aria-controls="collapseExample">Shop</a>
+                                </p>
+                                <div class="collapse" id="collapseExample">
+                                    <div class="card card-body">
+                                        <ul>
+                                            <li><a href="./item.html">Categories</a></li>
+                                            <li><a href="#">Wishlist</a></li>
+                                            <li><a href="./cart.html">Shopping Cart</a></li>
+                                    </div>
+                                </div>
+                            </li>
                             <li><a href="#">Blog</a></li>
                             <li><a href="#">About</a></li>
                         </ul>
+                        <a href="./signIn.html" class="prfl text-center d-block py-3">Profile</a>
                     </div>
                 </div>
             </div>

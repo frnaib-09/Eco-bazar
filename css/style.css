@@ -590,6 +590,18 @@ header .links li .cart {
     color: var(--gray-scale-white);
 }
 
+.mblHdr .prfl {
+    display: block;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--gray-scale-gray-â€“-900);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
 .mblHdr .menuCard li a {
     color: var(--gray-scale-gray-â€“-900);
 }
@@ -2772,3 +2784,169 @@ tbody tr td .btnCart {
     filter: brightness(120%);
 }
 /* -------------------------------------------------------------------------- */
+
+/* login page */
+.loginCard {
+    border: 1px solid var(--gray-scale-gray-â€“-50);
+    border-radius: 8px;
+    padding: 24px;
+    margin: 80px auto;
+    box-shadow: 0 0 56px 0 rgba(0, 38, 3, 0.08);
+}
+
+.loginCard h1 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 120%;
+    color: var(--gray-scale-gray-â€“-900);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.loginCard input {
+    border: 1px solid var(--gray-scale-gray-â€“-100);
+    border-radius: 6px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+}
+
+.loginCard .passPanel {
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.loginCard .passPanel input {
+    width: 100%;
+    border: 1px solid var(--gray-scale-gray-â€“-100);
+    border-radius: 6px;
+    padding: 14px 16px;
+}
+
+.loginCard .passPanel button {
+    position: absolute;
+    top: 45%;
+    right: 16px;
+    transform: translateY(-50%);
+    color: var(--gray-scale-gray-â€“-800);
+    font-size: 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.forgot {
+    margin-bottom: 20px;
+}
+
+.terms input[type="checkbox"],
+.forgot input[type="checkbox"] {
+    accent-color: var(--branding-success-dark);
+    color: var(--gray-scale-white);
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+}
+
+.terms label,
+.forgot label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-â€“-600);
+}
+
+.forgot .remember_me a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-â€“-600);
+}
+
+.forgot .remember_me a:hover {
+    text-decoration: underline;
+}
+
+.loginBtn {
+    border-radius: 43px;
+    padding: 14px 32px;
+    background: var(--branding-success);
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 120%;
+    color: var(--gray-scale-white);
+}
+
+.loginBtn:hover {
+    filter: brightness(120%);
+}
+
+.signUp {
+    margin: 20px 0 32px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-â€“-600);
+}
+
+.signUp a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-â€“-900);
+}
+
+.signUp a:hover {
+    text-decoration: underline;
+}
+
+.signupCard {
+    padding: 24px;
+    border: 1px solid var(--gray-scale-gray-â€“-50);
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 0 56px 0 rgba(0, 38, 3, 0.08);
+}
+
+.signupCard h1 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 120%;
+    color: var(--gray-scale-gray-â€“-900);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.signupCard input {
+    border: 1px solid var(--gray-scale-gray-â€“-100);
+    border-radius: 6px;
+    padding: 14px 16px;
+    margin: 6px 0;
+}
+
+.signupCard .newpass_2,
+.signupCard .newpass {
+    position: relative;
+}
+
+.signupCard .newpass_2 input,
+.signupCard .newpass input {
+    width: 100%;
+}
+
+.signupCard .newpass_2 button,
+.signupCard .newpass button {
+    position: absolute;
+    top: 45%;
+    right: 16px;
+    transform: translateY(-50%);
+    color: var(--gray-scale-gray-â€“-800);
+    font-size: 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.terms {
+    margin: 16px 0 20px;
+}

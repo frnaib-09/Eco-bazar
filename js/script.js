@@ -196,6 +196,38 @@ function addToWishList() {
   addToWishBtn.innerHTML = `<iconify-icon icon="mdi:tick"></iconify-icon>`;
 }
 
+let pasBtn = document.querySelector('.newpass_2 button');
+let pasInput = document.querySelector('.newpass_2 input');
+
+let passBtn = document.querySelector('.newpass button');
+let passInput = document.querySelector('.newpass input');
+
+let passwordBtn = document.querySelector('.passPanel button');
+let passwordInput = document.querySelector('.passPanel input');
+
+function passwordHideAndShow() {
+  let isPassword = passInput.type === "password";
+
+  // Toggle input types
+  passInput.type = isPassword ? "text" : "password";
+  pasInput.type = isPassword ? "text" : "password";
+  passwordInput.type = isPassword ? "text" : "password";
+
+  // Toggle icons
+  let icon = isPassword 
+    ? `<iconify-icon icon="basil:eye-closed-outline"></iconify-icon>` 
+    : `<iconify-icon icon="basil:eye-outline"></iconify-icon>`;
+
+  passBtn.innerHTML = icon;
+  pasBtn.innerHTML = icon;
+  passwordBtn.innerHTML = icon;
+}
+
+// Add event listeners
+passBtn.addEventListener("click", passwordHideAndShow);
+passwordBtn.addEventListener("click", passwordHideAndShow);
+pasBtn.addEventListener("click", passwordHideAndShow);
+
 let plusBtn = document.querySelector(`.plus`);
 let minusBtn = document.querySelector(`.minus`);
 let inputField = document.querySelector(`.limit input`);
