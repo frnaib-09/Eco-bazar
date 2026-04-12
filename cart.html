@@ -327,7 +327,7 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <div class="added d-flex align-items-center gap-3">
+                                    <div class="added d-flex flex-wrap flex-md-nowrap align-items-center gap-3">
                                         <div class="col-3">
                                             <a href="#"><img src="./images/cart img.png" alt="" class="img-fluid"></a>
                                         </div>
@@ -373,16 +373,14 @@
                                 <td>$14.99</td>
                                 <td><button><iconify-icon icon="bitcoin-icons:cross-filled"></iconify-icon></button></td>
                             </tr>
-                            <tr class="d-flex">
+                            <tr>
                                 <td>
-                                    <div class="col-lg-6">
-                                        <button class="btnCart">Return to shop</button>
-                                    </div>
+                                    <button class="btnCart" onclick="window.location.href='shop.html'">Return to shop</button>
                                 </td>
+                                <td></td>
+                                <td></td>
                                 <td>
-                                    <div class="col-lg-6">
-                                        <button class="btnCart">Update Cart</button>
-                                    </div>
+                                    <button class="btnCart">Update Cart</button>
                                 </td>
                             </tr>
                         </tbody>
@@ -399,31 +397,31 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="cartPrice col-lg-4">
                     <div class="total">
                         <h6>Cart Total</h6>
-                        <div class="d-flex justify-content-between">
-                            <p>Subtotal</p>
+                        <div class="itemData d-flex justify-content-between">
+                            <p>Subtotal:</p>
                             <span>$84.99</span>
                         </div>
-                        <div class="d-flex justify-content-between">
-                            <p>Total</p>
-                            <span>$84.99</span>
+                        <div class="itemData d-flex justify-content-between">
+                            <p>Shipping:</p>
+                            <span>Free</span>
                         </div>
-                        <button class="checkout">Proceed to checkout</button>
+                        <div class="itemData d-flex justify-content-between">
+                            <p>Total:</p>
+                            <span><b>$84.99</b></span>
+                        </div>
+                        <button class="checkoutBtn">Proceed to checkout</button>
                     </div>
             </div>
         </div>
     </section>
     <!-- ----------------------------------------------------------------------- -->
 
-
-
-
-
     <!-- ----------------------------------------------------------------------- -->
     <!--                           Newsletter Section                            -->
-    <!-- <section id="home_newsletter">
+    <section id="home_newsletter">
         <div class="container">
             <div class="row justify-content-between align-items-center">
                 <div class="col-lg-2 col-md-2">
@@ -445,12 +443,12 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
     <!-- ----------------------------------------------------------------------- -->
 
     <!-- ----------------------------------------------------------------------- -->
     <!--                             Footer Section                              -->
-    <!-- <footer>
+    <footer>
         <div class="container">
             <div class="row pb-lg-5">
                 <div class="col-lg-3">
@@ -555,7 +553,7 @@
                 </div>
             </div>
         </div>
-    </footer> -->
+    </footer>
     <!-- ----------------------------------------------------------------------- -->
 
     <a href="#" class="goToTop"><iconify-icon icon="ep:arrow-up-bold"></iconify-icon></a>

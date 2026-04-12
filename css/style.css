@@ -2671,6 +2671,7 @@ tbody tr td .btnCart {
     border-radius: 8px;
     padding: 20px;
     width: 100%;
+    margin-bottom: 80px;
 }
 
 .coupon h6 {
@@ -2712,5 +2713,62 @@ tbody tr td .btnCart {
 
 .coupon .inputBox button:hover {
     background: var(--branding-success);
+}
+
+.cartPrice {
+    padding: 24px;
+    border: 1px solid var(--gray-scale-gray-â€“-100);
+    border-radius: 8px;
+    height: 296px;
+}
+
+.cartPrice .total h6 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-â€“-900);
+    margin-bottom: 7px;
+}
+
+.cartPrice .total .itemData {
+    padding: 12px 0px;
+    border-bottom: 1px solid var(--gray-scale-gray-â€“-100);
+}
+
+.cartPrice .total .itemData:nth-child(4) {
+    border-bottom: none;
+}
+
+.cartPrice .total .itemData p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-â€“-700);
+}
+
+.cartPrice .total .itemData span {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-â€“-900);
+}
+
+.checkoutBtn {
+    margin: 20px auto 0;
+    display: block;
+    border-radius: 43px;
+    padding: 16px 40px;
+    width: 100%;
+    background: var(--branding-success);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    color: var(--gray-scale-white);
+    border: none;
+    transition: .25s;
+}
+
+.checkoutBtn:hover {
+    filter: brightness(120%);
 }
 /* -------------------------------------------------------------------------- */
