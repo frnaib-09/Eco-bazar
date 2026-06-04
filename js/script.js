@@ -1,3 +1,40 @@
+const loader = document.getElementById("preloader");
+
+function showPopup() {
+  const popup = document.getElementById("popup");
+
+  if (!popup) return;
+
+  const hideUntil = localStorage.getItem("popupHideUntil");
+
+  if (hideUntil && Date.now() < Number(hideUntil)) {
+    return;
+  }
+
+  popup.classList.add("show");
+}
+
+function loadfunc() {
+  if (!loader) {
+    showPopup();
+    return;
+  }
+
+  loader.classList.add("loader-hidden");
+
+  loader.addEventListener("transitionend", () => {
+    loader.remove();
+    showPopup();
+  }, { once: true });
+
+  setTimeout(() => {
+    loader.remove();
+    showPopup();
+  }, 600);
+}
+
+window.addEventListener("load", loadfunc);
+
 let lastScroll = 0;
 const headerTop = document.querySelector(".headerTop");
 const headerMid = document.querySelector(".headerMid");
@@ -196,56 +233,52 @@ function addToWishList() {
   addToWishBtn.innerHTML = `<iconify-icon icon="mdi:tick"></iconify-icon>`;
 }
 
-let pasBtn = document.querySelector('.newpass_2 button');
-let pasInput = document.querySelector('.newpass_2 input');
+document.querySelectorAll(".passPanel, .newpass, .newpass_2").forEach((passwordField) => {
+  const input = passwordField.querySelector("input");
+  const button = passwordField.querySelector("button");
 
-let passBtn = document.querySelector('.newpass button');
-let passInput = document.querySelector('.newpass input');
+  if (!input || !button) return;
 
-let passwordBtn = document.querySelector('.passPanel button');
-let passwordInput = document.querySelector('.passPanel input');
+  button.setAttribute("type", "button");
 
-function passwordHideAndShow() {
-  let isPassword = passInput.type === "password";
+  button.addEventListener("click", () => {
+    const isPassword = input.type === "password";
 
-  // Toggle input types
-  passInput.type = isPassword ? "text" : "password";
-  pasInput.type = isPassword ? "text" : "password";
-  passwordInput.type = isPassword ? "text" : "password";
-
-  // Toggle icons
-  let icon = isPassword 
-    ? `<iconify-icon icon="basil:eye-closed-outline"></iconify-icon>` 
-    : `<iconify-icon icon="basil:eye-outline"></iconify-icon>`;
-
-  passBtn.innerHTML = icon;
-  pasBtn.innerHTML = icon;
-  passwordBtn.innerHTML = icon;
-}
-
-// Add event listeners
-passBtn.addEventListener("click", passwordHideAndShow);
-passwordBtn.addEventListener("click", passwordHideAndShow);
-pasBtn.addEventListener("click", passwordHideAndShow);
+    input.type = isPassword ? "text" : "password";
+    button.innerHTML = isPassword
+      ? `<iconify-icon icon="iconamoon:eye-off-light"></iconify-icon>`
+      : `<iconify-icon icon="iconamoon:eye-light"></iconify-icon>`;
+  });
+});
 
 let plusBtn = document.querySelector(`.plus`);
 let minusBtn = document.querySelector(`.minus`);
 let inputField = document.querySelector(`.limit input`);
 
 function addition() {
+    if (!inputField) return;
+
     inputField.value = +inputField.value + 1;
 }
 
-plusBtn.addEventListener("click", addition);
+if (plusBtn) {
+  plusBtn.addEventListener("click", addition);
+}
 
 function subtraction() {
+    if (!inputField) return;
+
     inputField.value = +inputField.value - 1;
     if (inputField.value < 1) {
         inputField.value = 1;
-        minusBtn.style.cursor = "not-allowed";
+        if (minusBtn) {
+          minusBtn.style.cursor = "not-allowed";
+        }
     }
   }
-  minusBtn.addEventListener("click", subtraction);
+  if (minusBtn) {
+    minusBtn.addEventListener("click", subtraction);
+  }
 
 $("#get-started").countdown("2026/09/23", function(event) {
 
@@ -255,44 +288,16 @@ $("#get-started").countdown("2026/09/23", function(event) {
   $("#seconds").text(event.strftime('%S'));
 });
 
-const loader = document.getElementById("preloader");
-  
-  function loadfunc(){
-    loader.classList.add("loader-hidden");
-    
-    loader.addEventListener("transitionend", () => {
-        document.body.removeChild(loader);
-    });
-  }
-
-    window.addEventListener("load", loadfunc);
-
-
-window.onload = function () {
-    const popup = document.getElementById("popup");
-
-    const hideUntil = localStorage.getItem("popupHideUntil");
-
-    if (hideUntil && new Date().getTime() < hideUntil) {
-        return; 
-    }
-
-    if (sessionStorage.getItem("popupShown")) {
-        return;
-    }
-
-    popup.classList.add("show");
-    sessionStorage.setItem("popupShown", "true");
-};
-
 //funciton
   const popup = document.getElementById("popup");
   const checkbox = document.getElementById("never_appear");
   const closeBtn =document.getElementById("close");
 
   function popupOpener() {
+    if (!popup) return;
+
     popup.classList.remove("show");
-    if (checkbox.checked) {
+    if (checkbox && checkbox.checked) {
         const now = new Date().getTime();
         const next24Hours = now + (24 * 60 * 60 * 1000);
 
@@ -300,5 +305,7 @@ window.onload = function () {
     }
   }
 
-    closeBtn.addEventListener("click", popupOpener);
+    if (closeBtn) {
+      closeBtn.addEventListener("click", popupOpener);
+    }
 
